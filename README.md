@@ -1,9 +1,9 @@
 ## Rails, Nuxt & Ant Design Auth
 This is a simple placeholder app that demonstrates working signup/login/logout functionality with Rails, Nuxt & Ant Design. It has content, which is pulled in from a PostgreSQL database through a backend API. Public content can be viewed by anyone and private content is protected and can only  be viewed when the user is logged in. Frontend auth uses the Nuxt Auth module and backend auth uses the Devise and Devise-JWT gems. I have a this same app/tutorial but with Vuetify instead of Ant Design [here](https://github.com/mark-mcdermott/rails-nuxt-vuetify-auth).
 
-[Screenshot 1](https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth/blob/main/screenshot-1.jpg)
+![Screenshot 1](https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth/blob/main/screenshot-1.jpg)
 
-[Screenshot 2](https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth/blob/main/screenshot-1.jpg)
+![Screenshot 2](https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth/blob/main/screenshot-1.jpg)
 
 ### To Run 
 - You must have PostgreSQL running in the background. See https://www.postgresql.org/download/

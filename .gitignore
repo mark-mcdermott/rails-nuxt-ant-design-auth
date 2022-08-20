@@ -1,4 +1,4 @@
-# Rails gitignore stuff
+## Rails gitignore stuff
 
 backend/*.rbc
 backend/capybara-*.html
@@ -28,7 +28,7 @@ backend/config/secrets.yml
 backend/.env
 backend/.env*.local
 
-## Environment normalization:
+# Environment normalization:
 backend/.bundle
 backend/vendor/bundle
 
@@ -64,7 +64,7 @@ backend/storage/*
 backend/!/storage/.keep
 backend/public/uploads
 
-# Nuxt gitignore stuff
+## Nuxt gitignore stuff
 
 # Logs
 frontend/logs
