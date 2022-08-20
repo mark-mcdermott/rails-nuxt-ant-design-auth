@@ -3,7 +3,7 @@ This is a simple placeholder app that demonstrates working signup/login/logout f
 
 ![Screenshot 1](https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth/blob/main/screenshot-1.jpg)
 
-![Screenshot 2](https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth/blob/main/screenshot-1.jpg)
+![Screenshot 2](https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth/blob/main/screenshot-2.jpg)
 
 ### To Run 
 - You must have PostgreSQL running in the background. See https://www.postgresql.org/download/
