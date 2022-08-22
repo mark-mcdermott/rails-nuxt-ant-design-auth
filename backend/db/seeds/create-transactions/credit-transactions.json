@@ -1,0 +1,1570 @@
+[
+	{
+		"date": "01/01/22",
+		"description": "Granite Keyboard at Reinger and Sons",
+		"amount": "$429.84",
+		"balance": "$4,750.23",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "01/01/22",
+		"description": "Plastic Soap at Thompson Group",
+		"amount": "$549.54",
+		"balance": "$5,299.77",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "01/03/22",
+		"description": "Wooden Chicken at Padberg",
+		"amount": "$769.40",
+		"balance": "$6,069.17",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "01/03/22",
+		"description": "Steel Ball at Marquardt",
+		"amount": "$714.29",
+		"balance": "$6,783.46",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "01/04/22",
+		"description": "Frozen Cheese at Ziemann Group",
+		"amount": "$491.97",
+		"balance": "$7,275.43",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "01/06/22",
+		"description": "Steel Soap at Goldner and Sons",
+		"amount": "$679.46",
+		"balance": "$7,954.89",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "01/06/22",
+		"description": "Wooden Bacon at Nienow Group",
+		"amount": "$511.79",
+		"balance": "$8,466.68",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "01/08/22",
+		"description": "Plastic Table at Langosh and Sons",
+		"amount": "$553.1",
+		"balance": "$9,019.78",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "01/09/22",
+		"description": "Metal Chicken at Bergstrom Group",
+		"amount": "$272.63",
+		"balance": "$9,292.41",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "01/10/22",
+		"description": "Metal Tuna at Yundt",
+		"amount": "$476.66",
+		"balance": "$9,769.07",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "01/10/22",
+		"description": "Cotton Fish at Lueilwitz",
+		"amount": "$510.67",
+		"balance": "$10,279.74",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "01/11/22",
+		"description": "Rubber Salad at Larkin",
+		"amount": "$217.74",
+		"balance": "$10,497.48",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "01/13/22",
+		"description": "Frozen Salad at Kuhlman and Sons",
+		"amount": "$735.10",
+		"balance": "$11,232.58",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "01/13/22",
+		"description": "Fresh Keyboard at Beier and Sons",
+		"amount": "$685.20",
+		"balance": "$11,917.78",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "01/15/22",
+		"description": "credit card payment",
+		"amount": "-$11,917.78",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "01/16/22",
+		"description": "Steel Fish at Beer and Sons",
+		"amount": "$441.75",
+		"balance": "$441.75",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "01/17/22",
+		"description": "Concrete Fish at Dickinson Group",
+		"amount": "$571.45",
+		"balance": "$1,013.20",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "01/18/22",
+		"description": "Plastic Salad at Gibson",
+		"amount": "$774.58",
+		"balance": "$1,787.78",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "01/19/22",
+		"description": "Rubber Shirt at Krajcik Group",
+		"amount": "$259.10",
+		"balance": "$2,046.88",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "01/19/22",
+		"description": "Steel Salad at Beier",
+		"amount": "$509.92",
+		"balance": "$2,556.80",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "01/21/22",
+		"description": "Fresh Cheese at Stracke",
+		"amount": "$56.34",
+		"balance": "$2,613.14",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "01/22/22",
+		"description": "Fresh Towels at Hansen Group",
+		"amount": "$58.91",
+		"balance": "$2,672.05",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "01/23/22",
+		"description": "Steel Sausages at Howell",
+		"amount": "$71.83",
+		"balance": "$2,743.88",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "01/24/22",
+		"description": "Rubber Hat at Kunde Group",
+		"amount": "$754.77",
+		"balance": "$3,498.65",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "01/25/22",
+		"description": "Bronze Keyboard at Green",
+		"amount": "$560.95",
+		"balance": "$4,059.60",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "01/26/22",
+		"description": "Rubber Table at Denesik",
+		"amount": "$666.54",
+		"balance": "$4,726.14",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "01/27/22",
+		"description": "Fresh Chair at Kessler",
+		"amount": "$61.81",
+		"balance": "$4,787.95",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "01/28/22",
+		"description": "Rubber Mouse at Ernser",
+		"amount": "$479.91",
+		"balance": "$5,267.86",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "01/29/22",
+		"description": "Metal Chair at Upton Group",
+		"amount": "$344.58",
+		"balance": "$5,612.44",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "01/29/22",
+		"description": "credit card payment",
+		"amount": "-$5,612.44",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "01/30/22",
+		"description": "Soft Ball at Feeney and Sons",
+		"amount": "$739.16",
+		"balance": "$739.16",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "02/01/22",
+		"description": "Metal Shirt at Orn Group",
+		"amount": "$69.40",
+		"balance": "$808.56",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "02/01/22",
+		"description": "Wooden Chips at Jacobi Group",
+		"amount": "$517.62",
+		"balance": "$1,326.18",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "02/03/22",
+		"description": "Concrete Bacon at Goldner",
+		"amount": "$134.71",
+		"balance": "$1,460.89",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "02/04/22",
+		"description": "Granite Shirt at Glover",
+		"amount": "$213.54",
+		"balance": "$1,674.43",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "02/05/22",
+		"description": "Steel Ball at Johns",
+		"amount": "$782.10",
+		"balance": "$2,456.53",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "02/05/22",
+		"description": "Soft Chair at Kutch Group",
+		"amount": "$520.97",
+		"balance": "$2,977.50",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "02/07/22",
+		"description": "Soft Cheese at Rohan and Sons",
+		"amount": "$770.77",
+		"balance": "$3,748.27",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "02/08/22",
+		"description": "Cotton Bike at Rath Group",
+		"amount": "$430.72",
+		"balance": "$4,178.99",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "02/09/22",
+		"description": "Rubber Table at Heathcote and Sons",
+		"amount": "$473.14",
+		"balance": "$4,652.13",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "02/09/22",
+		"description": "Fresh Sausages at Hudson",
+		"amount": "$259.84",
+		"balance": "$4,911.97",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "02/11/22",
+		"description": "Steel Gloves at Kovacek and Sons",
+		"amount": "$541.36",
+		"balance": "$5,453.33",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "02/11/22",
+		"description": "Concrete Pants at Kihn and Sons",
+		"amount": "$313.90",
+		"balance": "$5,767.23",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "02/13/22",
+		"description": "Fresh Ball at Reilly Group",
+		"amount": "$107.89",
+		"balance": "$5,875.12",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "02/14/22",
+		"description": "credit card payment",
+		"amount": "-$5,875.12",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "02/15/22",
+		"description": "Cotton Fish at Kulas",
+		"amount": "$665.7",
+		"balance": "$665.70",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "02/16/22",
+		"description": "Steel Bike at Wiegand and Sons",
+		"amount": "$754.31",
+		"balance": "$1,420.01",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "02/17/22",
+		"description": "Granite Sausages at Pollich",
+		"amount": "$678.48",
+		"balance": "$2,098.49",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "02/18/22",
+		"description": "Wooden Fish at Altenwerth",
+		"amount": "$622.85",
+		"balance": "$2,721.34",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "02/18/22",
+		"description": "Steel Ball at Pagac",
+		"amount": "$37.18",
+		"balance": "$2,758.52",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "02/20/22",
+		"description": "Steel Chair at Prohaska Group",
+		"amount": "$519.69",
+		"balance": "$3,278.21",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "02/21/22",
+		"description": "Frozen Pizza at Bins",
+		"amount": "$485.63",
+		"balance": "$3,763.84",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "02/21/22",
+		"description": "Steel Shoes at Gorczany",
+		"amount": "$772.62",
+		"balance": "$4,536.46",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "02/22/22",
+		"description": "Concrete Sausages at Runolfsdottir",
+		"amount": "$76.31",
+		"balance": "$4,612.77",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "02/24/22",
+		"description": "Plastic Chicken at Runolfsdottir and Sons",
+		"amount": "$480.66",
+		"balance": "$5,093.43",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "02/25/22",
+		"description": "Bronze Mouse at McDermott",
+		"amount": "$152.5",
+		"balance": "$5,245.93",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "02/25/22",
+		"description": "Concrete Computer at Leuschke",
+		"amount": "$79.57",
+		"balance": "$5,325.50",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "02/27/22",
+		"description": "Cotton Gloves at Kutch",
+		"amount": "$196.61",
+		"balance": "$5,522.11",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "02/27/22",
+		"description": "Metal Keyboard at Lemke",
+		"amount": "$210.28",
+		"balance": "$5,732.39",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "03/01/22",
+		"description": "credit card payment",
+		"amount": "-$5,732.39",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "03/02/22",
+		"description": "Fresh Car at McLaughlin Group",
+		"amount": "$658.0",
+		"balance": "$658.00",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "03/03/22",
+		"description": "Rubber Mouse at O'Conner",
+		"amount": "$302.43",
+		"balance": "$960.43",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "03/04/22",
+		"description": "Rubber Salad at Lockman",
+		"amount": "$280.66",
+		"balance": "$1,241.09",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "03/04/22",
+		"description": "Steel Bike at Kuhic and Sons",
+		"amount": "$30.56",
+		"balance": "$1,271.65",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "03/06/22",
+		"description": "Bronze Bike at Bahringer",
+		"amount": "$28.48",
+		"balance": "$1,300.13",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "03/06/22",
+		"description": "Metal Car at Quigley",
+		"amount": "$181.58",
+		"balance": "$1,481.71",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "03/08/22",
+		"description": "Wooden Car at Schoen",
+		"amount": "$245.0",
+		"balance": "$1,726.71",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "03/09/22",
+		"description": "Fresh Pants at Crooks and Sons",
+		"amount": "$794.1",
+		"balance": "$2,520.81",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "03/09/22",
+		"description": "Concrete Tuna at Kuhlman Group",
+		"amount": "$399.44",
+		"balance": "$2,920.25",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "03/11/22",
+		"description": "Wooden Mouse at Boehm",
+		"amount": "$112.3",
+		"balance": "$3,032.55",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "03/12/22",
+		"description": "Plastic Pizza at Gorczany and Sons",
+		"amount": "$136.93",
+		"balance": "$3,169.48",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "03/12/22",
+		"description": "Wooden Bacon at Hegmann",
+		"amount": "$531.24",
+		"balance": "$3,700.72",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "03/13/22",
+		"description": "Granite Bacon at Kovacek Group",
+		"amount": "$191.83",
+		"balance": "$3,892.55",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "03/15/22",
+		"description": "Frozen Table at Walker and Sons",
+		"amount": "$139.25",
+		"balance": "$4,031.80",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "03/16/22",
+		"description": "credit card payment",
+		"amount": "-$4,031.80",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "03/17/22",
+		"description": "Steel Shoes at Murray",
+		"amount": "$372.17",
+		"balance": "$372.17",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "03/18/22",
+		"description": "Plastic Shoes at Jacobi and Sons",
+		"amount": "$485.69",
+		"balance": "$857.86",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "03/19/22",
+		"description": "Plastic Table at Bartoletti",
+		"amount": "$130.30",
+		"balance": "$988.16",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "03/20/22",
+		"description": "Plastic Ball at Turcotte",
+		"amount": "$421.98",
+		"balance": "$1,410.14",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "03/20/22",
+		"description": "Soft Table at Borer",
+		"amount": "$517.96",
+		"balance": "$1,928.10",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "03/22/22",
+		"description": "Metal Sausages at Von",
+		"amount": "$378.33",
+		"balance": "$2,306.43",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "03/23/22",
+		"description": "Fresh Gloves at Lakin",
+		"amount": "$707.14",
+		"balance": "$3,013.57",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "03/24/22",
+		"description": "Plastic Shoes at Dicki Group",
+		"amount": "$730.51",
+		"balance": "$3,744.08",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "03/25/22",
+		"description": "Rubber Tuna at Doyle",
+		"amount": "$350.82",
+		"balance": "$4,094.90",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "03/26/22",
+		"description": "Bronze Table at Becker",
+		"amount": "$493.3",
+		"balance": "$4,588.20",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "03/26/22",
+		"description": "Frozen Bike at Hammes",
+		"amount": "$784.25",
+		"balance": "$5,372.45",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "03/28/22",
+		"description": "Plastic Chicken at Bruen Group",
+		"amount": "$166.53",
+		"balance": "$5,538.98",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "03/29/22",
+		"description": "Plastic Bike at Franecki",
+		"amount": "$43.97",
+		"balance": "$5,582.95",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "03/30/22",
+		"description": "Plastic Soap at Bergstrom and Sons",
+		"amount": "$40.97",
+		"balance": "$5,623.92",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "03/31/22",
+		"description": "credit card payment",
+		"amount": "-$5,623.92",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "04/01/22",
+		"description": "Soft Ball at Schuppe Group",
+		"amount": "$688.37",
+		"balance": "$688.37",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "04/01/22",
+		"description": "Fresh Bike at Macejkovic and Sons",
+		"amount": "$42.45",
+		"balance": "$730.82",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "04/02/22",
+		"description": "Cotton Chips at Stroman Group",
+		"amount": "$228.19",
+		"balance": "$959.01",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "04/03/22",
+		"description": "Rubber Computer at Wisozk and Sons",
+		"amount": "$302.33",
+		"balance": "$1,261.34",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "04/05/22",
+		"description": "Wooden Fish at Leannon",
+		"amount": "$351.36",
+		"balance": "$1,612.70",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "04/06/22",
+		"description": "Wooden Salad at Schinner Group",
+		"amount": "$578.65",
+		"balance": "$2,191.35",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "04/06/22",
+		"description": "Granite Computer at Cummerata",
+		"amount": "$715.62",
+		"balance": "$2,906.97",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "04/07/22",
+		"description": "Metal Ball at Bode",
+		"amount": "$217.55",
+		"balance": "$3,124.52",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "04/09/22",
+		"description": "Plastic Chips at Weber",
+		"amount": "$318.19",
+		"balance": "$3,442.71",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "04/10/22",
+		"description": "Fresh Gloves at Hilpert and Sons",
+		"amount": "$163.9",
+		"balance": "$3,606.61",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "04/11/22",
+		"description": "Wooden Mouse at Cole and Sons",
+		"amount": "$608.5",
+		"balance": "$4,215.11",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "04/12/22",
+		"description": "Wooden Sausages at Auer Group",
+		"amount": "$701.11",
+		"balance": "$4,916.22",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "04/13/22",
+		"description": "Rubber Chicken at Hodkiewicz Group",
+		"amount": "$700.46",
+		"balance": "$5,616.68",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "04/13/22",
+		"description": "Steel Chips at DuBuque",
+		"amount": "$636.85",
+		"balance": "$6,253.53",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "04/15/22",
+		"description": "credit card payment",
+		"amount": "-$6,253.53",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "04/16/22",
+		"description": "Soft Chips at Mayer",
+		"amount": "$440.53",
+		"balance": "$440.53",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "04/17/22",
+		"description": "Steel Chair at Nienow",
+		"amount": "$363.81",
+		"balance": "$804.34",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "04/18/22",
+		"description": "Fresh Pizza at Steuber Group",
+		"amount": "$192.33",
+		"balance": "$996.67",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "04/19/22",
+		"description": "Metal Car at Olson Group",
+		"amount": "$379.76",
+		"balance": "$1,376.43",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "04/20/22",
+		"description": "Metal Bacon at Brakus Group",
+		"amount": "$700.12",
+		"balance": "$2,076.55",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "04/21/22",
+		"description": "Granite Chips at Conroy",
+		"amount": "$430.90",
+		"balance": "$2,507.45",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "04/21/22",
+		"description": "Steel Salad at Harber",
+		"amount": "$778.37",
+		"balance": "$3,285.82",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "04/22/22",
+		"description": "Bronze Chips at Fisher and Sons",
+		"amount": "$682.87",
+		"balance": "$3,968.69",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "04/24/22",
+		"description": "Concrete Towels at McCullough Group",
+		"amount": "$489.44",
+		"balance": "$4,458.13",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "04/24/22",
+		"description": "Granite Soap at Batz",
+		"amount": "$482.40",
+		"balance": "$4,940.53",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "04/25/22",
+		"description": "Plastic Towels at Hartmann",
+		"amount": "$560.73",
+		"balance": "$5,501.26",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "04/27/22",
+		"description": "Cotton Car at Boyer",
+		"amount": "$575.26",
+		"balance": "$6,076.52",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "04/28/22",
+		"description": "Soft Keyboard at Weimann",
+		"amount": "$733.9",
+		"balance": "$6,810.42",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "04/29/22",
+		"description": "Fresh Ball at Smith and Sons",
+		"amount": "$796.93",
+		"balance": "$7,607.35",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "04/30/22",
+		"description": "credit card payment",
+		"amount": "-$7,607.35",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "05/01/22",
+		"description": "Wooden Pants at Sporer Group",
+		"amount": "$61.82",
+		"balance": "$61.82",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "05/01/22",
+		"description": "Steel Keyboard at Klocko Group",
+		"amount": "$316.68",
+		"balance": "$378.50",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "05/02/22",
+		"description": "Plastic Sausages at Howell Group",
+		"amount": "$27.73",
+		"balance": "$406.23",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "05/04/22",
+		"description": "Soft Chair at Swaniawski",
+		"amount": "$670.15",
+		"balance": "$1,076.38",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "05/05/22",
+		"description": "Rubber Bike at Kling",
+		"amount": "$730.22",
+		"balance": "$1,806.60",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "05/06/22",
+		"description": "Plastic Bacon at Dibbert",
+		"amount": "$270.96",
+		"balance": "$2,077.56",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "05/07/22",
+		"description": "Soft Salad at Bashirian",
+		"amount": "$762.5",
+		"balance": "$2,840.06",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "05/08/22",
+		"description": "Bronze Soap at Luettgen and Sons",
+		"amount": "$225.70",
+		"balance": "$3,065.76",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "05/09/22",
+		"description": "Cotton Mouse at Metz",
+		"amount": "$518.38",
+		"balance": "$3,584.14",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "05/10/22",
+		"description": "Concrete Soap at Conroy",
+		"amount": "$686.80",
+		"balance": "$4,270.94",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "05/11/22",
+		"description": "Plastic Bike at DuBuque",
+		"amount": "$62.13",
+		"balance": "$4,333.07",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "05/12/22",
+		"description": "Bronze Towels at Abshire",
+		"amount": "$164.91",
+		"balance": "$4,497.98",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "05/13/22",
+		"description": "Steel Computer at Howe Group",
+		"amount": "$435.25",
+		"balance": "$4,933.23",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "05/14/22",
+		"description": "Metal Shoes at Medhurst",
+		"amount": "$40.91",
+		"balance": "$4,974.14",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "05/15/22",
+		"description": "credit card payment",
+		"amount": "-$4,974.14",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "05/16/22",
+		"description": "Concrete Towels at Homenick",
+		"amount": "$237.28",
+		"balance": "$237.28",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "05/17/22",
+		"description": "Rubber Soap at Harris Group",
+		"amount": "$439.92",
+		"balance": "$677.20",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "05/18/22",
+		"description": "Concrete Chips at Howell Group",
+		"amount": "$170.86",
+		"balance": "$848.06",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "05/19/22",
+		"description": "Wooden Keyboard at Schowalter Group",
+		"amount": "$438.15",
+		"balance": "$1,286.21",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "05/19/22",
+		"description": "Steel Keyboard at Schmitt",
+		"amount": "$107.44",
+		"balance": "$1,393.65",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "05/21/22",
+		"description": "Metal Soap at Volkman and Sons",
+		"amount": "$740.8",
+		"balance": "$2,134.45",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "05/22/22",
+		"description": "Bronze Chips at Paucek Group",
+		"amount": "$351.11",
+		"balance": "$2,485.56",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "05/23/22",
+		"description": "Granite Pants at Torp Group",
+		"amount": "$277.88",
+		"balance": "$2,763.44",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "05/24/22",
+		"description": "Plastic Shoes at Hoeger",
+		"amount": "$73.90",
+		"balance": "$2,837.34",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "05/25/22",
+		"description": "Plastic Table at O'Hara",
+		"amount": "$342.47",
+		"balance": "$3,179.81",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "05/26/22",
+		"description": "Plastic Car at Schroeder",
+		"amount": "$228.19",
+		"balance": "$3,408.00",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "05/26/22",
+		"description": "Wooden Hat at Champlin",
+		"amount": "$533.57",
+		"balance": "$3,941.57",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "05/28/22",
+		"description": "Concrete Car at Skiles",
+		"amount": "$434.89",
+		"balance": "$4,376.46",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "05/28/22",
+		"description": "Bronze Mouse at O'Keefe and Sons",
+		"amount": "$171.68",
+		"balance": "$4,548.14",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "05/30/22",
+		"description": "credit card payment",
+		"amount": "-$4,548.14",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "05/31/22",
+		"description": "Bronze Cheese at Jacobson",
+		"amount": "$206.14",
+		"balance": "$206.14",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "06/01/22",
+		"description": "Cotton Hat at Dibbert Group",
+		"amount": "$695.39",
+		"balance": "$901.53",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "06/02/22",
+		"description": "Cotton Sausages at Gottlieb and Sons",
+		"amount": "$705.38",
+		"balance": "$1,606.91",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "06/02/22",
+		"description": "Bronze Tuna at Spencer and Sons",
+		"amount": "$456.25",
+		"balance": "$2,063.16",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "06/04/22",
+		"description": "Metal Sausages at Wintheiser Group",
+		"amount": "$638.31",
+		"balance": "$2,701.47",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "06/05/22",
+		"description": "Concrete Gloves at Ankunding",
+		"amount": "$121.1",
+		"balance": "$2,822.57",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "06/06/22",
+		"description": "Steel Chicken at Barrows Group",
+		"amount": "$385.63",
+		"balance": "$3,208.20",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "06/07/22",
+		"description": "Metal Chicken at Satterfield and Sons",
+		"amount": "$753.20",
+		"balance": "$3,961.40",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "06/08/22",
+		"description": "Fresh Car at O'Keefe and Sons",
+		"amount": "$17.52",
+		"balance": "$3,978.92",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "06/08/22",
+		"description": "Metal Salad at Kiehn and Sons",
+		"amount": "$443.63",
+		"balance": "$4,422.55",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "06/10/22",
+		"description": "Bronze Chicken at Fisher",
+		"amount": "$551.92",
+		"balance": "$4,974.47",
+		"category": "lisa",
+		"account": "credit"
+	},
+	{
+		"date": "06/11/22",
+		"description": "Soft Bike at Haley",
+		"amount": "$474.86",
+		"balance": "$5,449.33",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "06/11/22",
+		"description": "Cotton Pizza at Hegmann Group",
+		"amount": "$187.42",
+		"balance": "$5,636.75",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "06/13/22",
+		"description": "Rubber Computer at Hauck",
+		"amount": "$537.29",
+		"balance": "$6,174.04",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "06/14/22",
+		"description": "credit card payment",
+		"amount": "-$6,174.04",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "06/15/22",
+		"description": "Plastic Bacon at Davis and Sons",
+		"amount": "$723.91",
+		"balance": "$723.91",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "06/16/22",
+		"description": "Steel Computer at Schowalter and Sons",
+		"amount": "$91.45",
+		"balance": "$815.36",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "06/17/22",
+		"description": "Steel Chips at Carter",
+		"amount": "$518.48",
+		"balance": "$1,333.84",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "06/18/22",
+		"description": "Bronze Bike at Kemmer and Sons",
+		"amount": "$576.67",
+		"balance": "$1,910.51",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "06/19/22",
+		"description": "Concrete Towels at Bergstrom",
+		"amount": "$115.13",
+		"balance": "$2,025.64",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "06/20/22",
+		"description": "Frozen Chicken at Marvin and Sons",
+		"amount": "$498.62",
+		"balance": "$2,524.26",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "06/21/22",
+		"description": "Frozen Bike at Botsford and Sons",
+		"amount": "$400.63",
+		"balance": "$2,924.89",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "06/22/22",
+		"description": "Fresh Cheese at Konopelski",
+		"amount": "$456.32",
+		"balance": "$3,381.21",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "06/23/22",
+		"description": "Granite Keyboard at Prosacco",
+		"amount": "$467.31",
+		"balance": "$3,848.52",
+		"category": "home",
+		"account": "credit"
+	},
+	{
+		"date": "06/24/22",
+		"description": "Metal Fish at Armstrong",
+		"amount": "$278.33",
+		"balance": "$4,126.85",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "06/24/22",
+		"description": "Plastic Shoes at Roob and Sons",
+		"amount": "$44.9",
+		"balance": "$4,171.75",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "06/26/22",
+		"description": "Steel Computer at Beatty",
+		"amount": "$118.36",
+		"balance": "$4,290.11",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "06/27/22",
+		"description": "Metal Car at Schaden",
+		"amount": "$502.71",
+		"balance": "$4,792.82",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "06/28/22",
+		"description": "Granite Sausages at Deckow Group",
+		"amount": "$257.84",
+		"balance": "$5,050.66",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "06/29/22",
+		"description": "credit card payment",
+		"amount": "-$5,050.66",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "06/30/22",
+		"description": "Plastic Mouse at Kuvalis Group",
+		"amount": "$661.28",
+		"balance": "$661.28",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "07/01/22",
+		"description": "Fresh Tuna at Schowalter and Sons",
+		"amount": "$189.37",
+		"balance": "$850.65",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "07/02/22",
+		"description": "Metal Ball at Kshlerin Group",
+		"amount": "$128.46",
+		"balance": "$979.11",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "07/03/22",
+		"description": "Bronze Sausages at Stehr",
+		"amount": "$107.89",
+		"balance": "$1,087.00",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "07/03/22",
+		"description": "Plastic Cheese at Krajcik and Sons",
+		"amount": "$737.79",
+		"balance": "$1,824.79",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "07/04/22",
+		"description": "Steel Keyboard at Runolfsdottir",
+		"amount": "$568.19",
+		"balance": "$2,392.98",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "07/06/22",
+		"description": "Bronze Pizza at Dooley",
+		"amount": "$189.67",
+		"balance": "$2,582.65",
+		"category": "web",
+		"account": "credit"
+	},
+	{
+		"date": "07/07/22",
+		"description": "Steel Shoes at Rice",
+		"amount": "$108.78",
+		"balance": "$2,691.43",
+		"category": "groceries",
+		"account": "credit"
+	},
+	{
+		"date": "07/07/22",
+		"description": "Plastic Salad at Mraz",
+		"amount": "$376.95",
+		"balance": "$3,068.38",
+		"category": "auto",
+		"account": "credit"
+	},
+	{
+		"date": "07/09/22",
+		"description": "Concrete Salad at Skiles Group",
+		"amount": "$51.48",
+		"balance": "$3,119.86",
+		"category": "daycare",
+		"account": "credit"
+	},
+	{
+		"date": "07/09/22",
+		"description": "Bronze Ball at Reilly and Sons",
+		"amount": "$663.90",
+		"balance": "$3,783.76",
+		"category": "phone",
+		"account": "credit"
+	},
+	{
+		"date": "07/10/22",
+		"description": "Wooden Hat at Hirthe",
+		"amount": "$415.48",
+		"balance": "$4,199.24",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "07/12/22",
+		"description": "Steel Bike at Collier",
+		"amount": "$571.86",
+		"balance": "$4,771.10",
+		"category": "music",
+		"account": "credit"
+	},
+	{
+		"date": "07/12/22",
+		"description": "Bronze Pants at Monahan",
+		"amount": "$494.90",
+		"balance": "$5,266.00",
+		"category": "mark",
+		"account": "credit"
+	},
+	{
+		"date": "07/14/22",
+		"description": "credit card payment",
+		"amount": "-$5,266.00",
+		"balance": "$0.00",
+		"category": "N/A",
+		"account": "credit"
+	},
+	{
+		"date": "07/15/22",
+		"description": "Bronze Hat at Reynolds",
+		"amount": "$291.99",
+		"balance": "$291.99",
+		"category": "lisa",
+		"account": "credit"
+	}
+]

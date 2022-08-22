@@ -1,0 +1,1570 @@
+[
+	{
+		"date": "12/31/21",
+		"description": "Frozen Shirt at Jenkins",
+		"amount": "-$96.18",
+		"balance": "$403.82",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/02/22",
+		"description": "Wooden Hat at Block",
+		"amount": "-$81.20",
+		"balance": "$322.62",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/02/22",
+		"description": "Soft Shoes at Powlowski and Sons",
+		"amount": "-$79.65",
+		"balance": "$242.97",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/04/22",
+		"description": "Metal Salad at Shanahan Group",
+		"amount": "-$1.82",
+		"balance": "$241.15",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/05/22",
+		"description": "Plastic Bacon at McDermott Group",
+		"amount": "-$1.48",
+		"balance": "$239.67",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/06/22",
+		"description": "Fresh Mouse at Mayert",
+		"amount": "-$67.14",
+		"balance": "$172.53",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/07/22",
+		"description": "Fresh Bacon at Collins and Sons",
+		"amount": "-$135.49",
+		"balance": "$37.04",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/08/22",
+		"description": "Rubber Pants at Trantow and Sons",
+		"amount": "-$4.49",
+		"balance": "$32.55",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/08/22",
+		"description": "Concrete Car at Bartell and Sons",
+		"amount": "-$24.49",
+		"balance": "$8.06",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/10/22",
+		"description": "Soft Ball at Wiza",
+		"amount": "-$2.36",
+		"balance": "$5.70",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/10/22",
+		"description": "Wooden Tuna at Jacobi Group",
+		"amount": "-$1.56",
+		"balance": "$4.14",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/11/22",
+		"description": "Soft Gloves at Schuppe",
+		"amount": "-$2.54",
+		"balance": "$1.60",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/13/22",
+		"description": "Cotton Table at Connelly and Sons",
+		"amount": "-$0.31",
+		"balance": "$1.29",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/14/22",
+		"description": "Metal Car at Price and Sons",
+		"amount": "-$0.10",
+		"balance": "$1.19",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/15/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,001.19",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/15/22",
+		"description": "Steel Computer at Zemlak and Sons",
+		"amount": "-$111.34",
+		"balance": "$3,889.85",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/17/22",
+		"description": "Rubber Pizza at Jones",
+		"amount": "-$572.80",
+		"balance": "$3,317.05",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/17/22",
+		"description": "Rubber Bike at Raynor and Sons",
+		"amount": "-$704.75",
+		"balance": "$2,612.30",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/19/22",
+		"description": "Rubber Tuna at Vandervort",
+		"amount": "-$513.82",
+		"balance": "$2,098.48",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/19/22",
+		"description": "Bronze Fish at Mueller",
+		"amount": "-$665.14",
+		"balance": "$1,433.34",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/21/22",
+		"description": "Fresh Table at Cummerata Group",
+		"amount": "-$713.15",
+		"balance": "$720.19",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/22/22",
+		"description": "Rubber Pizza at Borer",
+		"amount": "-$419.43",
+		"balance": "$300.76",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/23/22",
+		"description": "Plastic Computer at Green",
+		"amount": "-$237.70",
+		"balance": "$63.06",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/24/22",
+		"description": "Granite Chicken at O'Hara",
+		"amount": "-$59.18",
+		"balance": "$3.88",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/24/22",
+		"description": "Frozen Chips at Ferry Group",
+		"amount": "-$2.3",
+		"balance": "$1.58",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/26/22",
+		"description": "Bronze Ball at Marks",
+		"amount": "-$0.88",
+		"balance": "$0.70",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/27/22",
+		"description": "Frozen Table at Beier and Sons",
+		"amount": "-$0.82",
+		"balance": "$-0.12",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/28/22",
+		"description": "Rubber Fish at Keeling",
+		"amount": "-$-1.44",
+		"balance": "$1.32",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/29/22",
+		"description": "Granite Pizza at Mante",
+		"amount": "-$0.75",
+		"balance": "$0.57",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/30/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,000.57",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "01/30/22",
+		"description": "Fresh Soap at Schimmel Group",
+		"amount": "-$760.62",
+		"balance": "$3,239.95",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/01/22",
+		"description": "Wooden Chips at McGlynn Group",
+		"amount": "-$395.56",
+		"balance": "$2,844.39",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/02/22",
+		"description": "Wooden Chicken at Wilderman",
+		"amount": "-$75.14",
+		"balance": "$2,769.25",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/02/22",
+		"description": "Plastic Shoes at Towne and Sons",
+		"amount": "-$79.75",
+		"balance": "$2,689.50",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/04/22",
+		"description": "Cotton Table at McLaughlin Group",
+		"amount": "-$34.12",
+		"balance": "$2,655.38",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/05/22",
+		"description": "Wooden Pizza at Abernathy",
+		"amount": "-$319.52",
+		"balance": "$2,335.86",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/06/22",
+		"description": "Granite Chair at Reinger Group",
+		"amount": "-$77.85",
+		"balance": "$2,258.01",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/07/22",
+		"description": "Frozen Chicken at Sawayn",
+		"amount": "-$191.3",
+		"balance": "$2,066.71",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/08/22",
+		"description": "Plastic Mouse at Gutmann Group",
+		"amount": "-$764.72",
+		"balance": "$1,301.99",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/09/22",
+		"description": "Fresh Hat at Kunze Group",
+		"amount": "-$137.15",
+		"balance": "$1,164.84",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/09/22",
+		"description": "Metal Sausages at Halvorson Group",
+		"amount": "-$749.51",
+		"balance": "$415.33",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/10/22",
+		"description": "Steel Keyboard at Fay",
+		"amount": "-$235.72",
+		"balance": "$179.61",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/12/22",
+		"description": "Wooden Table at Rempel",
+		"amount": "-$80.21",
+		"balance": "$99.40",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/13/22",
+		"description": "Granite Bike at Sawayn",
+		"amount": "-$65.18",
+		"balance": "$34.22",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/13/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,034.22",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/14/22",
+		"description": "Fresh Shirt at McKenzie and Sons",
+		"amount": "-$486.46",
+		"balance": "$3,547.76",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/16/22",
+		"description": "Granite Gloves at Rosenbaum",
+		"amount": "-$673.38",
+		"balance": "$2,874.38",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/16/22",
+		"description": "Rubber Car at Denesik",
+		"amount": "-$603.95",
+		"balance": "$2,270.43",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/18/22",
+		"description": "Concrete Chicken at Hoeger and Sons",
+		"amount": "-$12.84",
+		"balance": "$2,257.59",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/19/22",
+		"description": "Cotton Table at Rogahn Group",
+		"amount": "-$328.76",
+		"balance": "$1,928.83",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/19/22",
+		"description": "Soft Mouse at Cummerata Group",
+		"amount": "-$463.10",
+		"balance": "$1,465.73",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/20/22",
+		"description": "Cotton Bacon at Daniel",
+		"amount": "-$650.82",
+		"balance": "$814.91",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/22/22",
+		"description": "Concrete Pants at Dooley Group",
+		"amount": "-$743.68",
+		"balance": "$71.23",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/23/22",
+		"description": "Rubber Tuna at Hammes",
+		"amount": "-$31.85",
+		"balance": "$39.38",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/24/22",
+		"description": "Frozen Pants at Langosh and Sons",
+		"amount": "-$32.14",
+		"balance": "$7.24",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/24/22",
+		"description": "Steel Sausages at Harris and Sons",
+		"amount": "-$1.50",
+		"balance": "$5.74",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/26/22",
+		"description": "Concrete Cheese at Kris",
+		"amount": "-$3.76",
+		"balance": "$1.98",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/27/22",
+		"description": "Plastic Mouse at Jakubowski Group",
+		"amount": "-$0.50",
+		"balance": "$1.48",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "02/28/22",
+		"description": "Bronze Ball at Kling",
+		"amount": "-$0.88",
+		"balance": "$0.60",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/01/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,000.60",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/01/22",
+		"description": "Granite Sausages at Gusikowski and Sons",
+		"amount": "-$3.62",
+		"balance": "$3,996.98",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/03/22",
+		"description": "Rubber Bike at Runte and Sons",
+		"amount": "-$543.44",
+		"balance": "$3,453.54",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/04/22",
+		"description": "Cotton Fish at Harber and Sons",
+		"amount": "-$712.20",
+		"balance": "$2,741.34",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/04/22",
+		"description": "Fresh Hat at Gerhold",
+		"amount": "-$780.71",
+		"balance": "$1,960.63",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/05/22",
+		"description": "Metal Shoes at Barrows and Sons",
+		"amount": "-$669.98",
+		"balance": "$1,290.65",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/06/22",
+		"description": "Granite Soap at Ortiz",
+		"amount": "-$675.39",
+		"balance": "$615.26",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/08/22",
+		"description": "Frozen Chicken at Skiles Group",
+		"amount": "-$63.65",
+		"balance": "$551.61",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/09/22",
+		"description": "Cotton Chicken at Littel and Sons",
+		"amount": "-$287.74",
+		"balance": "$263.87",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/09/22",
+		"description": "Granite Pizza at Stehr",
+		"amount": "-$195.19",
+		"balance": "$68.68",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/10/22",
+		"description": "Metal Chips at Langosh",
+		"amount": "-$41.6",
+		"balance": "$27.08",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/12/22",
+		"description": "Granite Pants at Stiedemann Group",
+		"amount": "-$24.79",
+		"balance": "$2.29",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/13/22",
+		"description": "Rubber Gloves at Nikolaus",
+		"amount": "-$1.90",
+		"balance": "$0.39",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/14/22",
+		"description": "Steel Table at Stoltenberg Group",
+		"amount": "-$-1.21",
+		"balance": "$1.60",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/15/22",
+		"description": "Fresh Fish at McClure and Sons",
+		"amount": "-$0.18",
+		"balance": "$1.42",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/16/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,001.42",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/17/22",
+		"description": "Rubber Chips at Stehr Group",
+		"amount": "-$427.71",
+		"balance": "$3,573.71",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/18/22",
+		"description": "Fresh Table at Hamill Group",
+		"amount": "-$530.96",
+		"balance": "$3,042.75",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/19/22",
+		"description": "Soft Cheese at Green",
+		"amount": "-$748.66",
+		"balance": "$2,294.09",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/20/22",
+		"description": "Wooden Keyboard at Bernhard",
+		"amount": "-$358.82",
+		"balance": "$1,935.27",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/21/22",
+		"description": "Fresh Towels at Funk",
+		"amount": "-$799.65",
+		"balance": "$1,135.62",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/22/22",
+		"description": "Granite Hat at Walsh",
+		"amount": "-$492.47",
+		"balance": "$643.15",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/23/22",
+		"description": "Metal Bacon at Hermann Group",
+		"amount": "-$514.40",
+		"balance": "$128.75",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/24/22",
+		"description": "Fresh Table at Cummings",
+		"amount": "-$13.86",
+		"balance": "$114.89",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/24/22",
+		"description": "Rubber Pizza at Prohaska and Sons",
+		"amount": "-$41.11",
+		"balance": "$73.78",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/25/22",
+		"description": "Fresh Chicken at Johnston",
+		"amount": "-$70.95",
+		"balance": "$2.83",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/27/22",
+		"description": "Metal Ball at Satterfield",
+		"amount": "-$1.6",
+		"balance": "$1.23",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/28/22",
+		"description": "Soft Chicken at Heathcote Group",
+		"amount": "-$0.5",
+		"balance": "$0.73",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/29/22",
+		"description": "Metal Mouse at O'Connell Group",
+		"amount": "-$0.21",
+		"balance": "$0.52",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/30/22",
+		"description": "Steel Car at Mitchell",
+		"amount": "-$-1.46",
+		"balance": "$1.98",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "03/31/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,001.98",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/01/22",
+		"description": "Soft Car at Jakubowski Group",
+		"amount": "-$158.74",
+		"balance": "$3,843.24",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/01/22",
+		"description": "Frozen Shirt at Friesen and Sons",
+		"amount": "-$208.28",
+		"balance": "$3,634.96",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/03/22",
+		"description": "Frozen Gloves at Langosh Group",
+		"amount": "-$22.18",
+		"balance": "$3,612.78",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/04/22",
+		"description": "Wooden Tuna at Bashirian",
+		"amount": "-$241.80",
+		"balance": "$3,370.98",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/05/22",
+		"description": "Granite Sausages at Kemmer",
+		"amount": "-$239.40",
+		"balance": "$3,131.58",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/06/22",
+		"description": "Steel Shoes at Volkman Group",
+		"amount": "-$278.33",
+		"balance": "$2,853.25",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/07/22",
+		"description": "Cotton Gloves at Schowalter",
+		"amount": "-$497.75",
+		"balance": "$2,355.50",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/08/22",
+		"description": "Cotton Soap at Reinger",
+		"amount": "-$109.28",
+		"balance": "$2,246.22",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/09/22",
+		"description": "Wooden Computer at Feest Group",
+		"amount": "-$354.61",
+		"balance": "$1,891.61",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/10/22",
+		"description": "Concrete Keyboard at Sanford Group",
+		"amount": "-$467.24",
+		"balance": "$1,424.37",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/11/22",
+		"description": "Plastic Salad at Little and Sons",
+		"amount": "-$439.43",
+		"balance": "$984.94",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/12/22",
+		"description": "Granite Car at Toy and Sons",
+		"amount": "-$43.99",
+		"balance": "$940.95",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/12/22",
+		"description": "Granite Car at Bogan and Sons",
+		"amount": "-$608.71",
+		"balance": "$332.24",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/14/22",
+		"description": "Plastic Gloves at Hettinger and Sons",
+		"amount": "-$14.91",
+		"balance": "$317.33",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/14/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,317.33",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/16/22",
+		"description": "Concrete Pants at Ondricka Group",
+		"amount": "-$543.46",
+		"balance": "$3,773.87",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/17/22",
+		"description": "Concrete Hat at Huels",
+		"amount": "-$105.81",
+		"balance": "$3,668.06",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/18/22",
+		"description": "Wooden Chips at Ziemann Group",
+		"amount": "-$212.80",
+		"balance": "$3,455.26",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/18/22",
+		"description": "Plastic Salad at Rosenbaum",
+		"amount": "-$304.8",
+		"balance": "$3,150.46",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/19/22",
+		"description": "Bronze Ball at Hettinger",
+		"amount": "-$717.68",
+		"balance": "$2,432.78",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/21/22",
+		"description": "Cotton Tuna at Leuschke",
+		"amount": "-$16.84",
+		"balance": "$2,415.94",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/21/22",
+		"description": "Soft Bacon at Shanahan and Sons",
+		"amount": "-$80.43",
+		"balance": "$2,335.51",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/23/22",
+		"description": "Frozen Chips at Kuhlman",
+		"amount": "-$552.52",
+		"balance": "$1,782.99",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/23/22",
+		"description": "Steel Fish at Rippin",
+		"amount": "-$437.92",
+		"balance": "$1,345.07",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/25/22",
+		"description": "Bronze Gloves at Reynolds",
+		"amount": "-$63.94",
+		"balance": "$1,281.13",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/26/22",
+		"description": "Cotton Computer at Powlowski and Sons",
+		"amount": "-$502.90",
+		"balance": "$778.23",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/27/22",
+		"description": "Bronze Shoes at Adams",
+		"amount": "-$203.97",
+		"balance": "$574.26",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/27/22",
+		"description": "Bronze Ball at Emmerich",
+		"amount": "-$402.30",
+		"balance": "$171.96",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/29/22",
+		"description": "Wooden Sausages at Quitzon and Sons",
+		"amount": "-$5.2",
+		"balance": "$166.76",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "04/30/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,166.76",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/01/22",
+		"description": "Frozen Fish at Denesik Group",
+		"amount": "-$120.44",
+		"balance": "$4,046.32",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/02/22",
+		"description": "Wooden Computer at Abernathy",
+		"amount": "-$155.91",
+		"balance": "$3,890.41",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/03/22",
+		"description": "Plastic Gloves at Langosh Group",
+		"amount": "-$82.46",
+		"balance": "$3,807.95",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/03/22",
+		"description": "Plastic Car at Hand",
+		"amount": "-$187.73",
+		"balance": "$3,620.22",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/05/22",
+		"description": "Rubber Soap at Schneider",
+		"amount": "-$623.24",
+		"balance": "$2,996.98",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/06/22",
+		"description": "Rubber Soap at Stokes Group",
+		"amount": "-$434.77",
+		"balance": "$2,562.21",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/07/22",
+		"description": "Soft Table at Balistreri Group",
+		"amount": "-$16.81",
+		"balance": "$2,545.40",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/07/22",
+		"description": "Rubber Chicken at Green",
+		"amount": "-$638.29",
+		"balance": "$1,907.11",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/09/22",
+		"description": "Metal Computer at Hand and Sons",
+		"amount": "-$285.15",
+		"balance": "$1,621.96",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/10/22",
+		"description": "Concrete Shoes at Blanda and Sons",
+		"amount": "-$586.2",
+		"balance": "$1,035.76",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/11/22",
+		"description": "Granite Computer at Gislason",
+		"amount": "-$442.6",
+		"balance": "$593.16",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/12/22",
+		"description": "Bronze Gloves at McCullough",
+		"amount": "-$109.23",
+		"balance": "$483.93",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/12/22",
+		"description": "Granite Towels at Lehner and Sons",
+		"amount": "-$468.65",
+		"balance": "$15.28",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/14/22",
+		"description": "Frozen Salad at Bernhard Group",
+		"amount": "-$9.59",
+		"balance": "$5.69",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/15/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,005.69",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/16/22",
+		"description": "Steel Bike at Gutmann",
+		"amount": "-$569.15",
+		"balance": "$3,436.54",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/17/22",
+		"description": "Plastic Towels at Schaden Group",
+		"amount": "-$794.52",
+		"balance": "$2,642.02",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/18/22",
+		"description": "Frozen Shirt at Hahn",
+		"amount": "-$645.75",
+		"balance": "$1,996.27",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/19/22",
+		"description": "Metal Pizza at Rice",
+		"amount": "-$95.93",
+		"balance": "$1,900.34",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/19/22",
+		"description": "Cotton Pizza at Thiel and Sons",
+		"amount": "-$584.69",
+		"balance": "$1,315.65",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/21/22",
+		"description": "Plastic Cheese at Lakin",
+		"amount": "-$128.58",
+		"balance": "$1,187.07",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/22/22",
+		"description": "Soft Shirt at Bahringer",
+		"amount": "-$181.48",
+		"balance": "$1,005.59",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/22/22",
+		"description": "Frozen Ball at Willms and Sons",
+		"amount": "-$772.3",
+		"balance": "$233.29",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/23/22",
+		"description": "Soft Tuna at Bode and Sons",
+		"amount": "-$84.72",
+		"balance": "$148.57",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/25/22",
+		"description": "Metal Towels at Huels",
+		"amount": "-$54.36",
+		"balance": "$94.21",
+		"category": "daycare",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/26/22",
+		"description": "Plastic Fish at Crona",
+		"amount": "-$54.94",
+		"balance": "$39.27",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/27/22",
+		"description": "Wooden Salad at Spinka",
+		"amount": "-$20.25",
+		"balance": "$19.02",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/28/22",
+		"description": "Rubber Shirt at Harber",
+		"amount": "-$2.81",
+		"balance": "$16.21",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/29/22",
+		"description": "Granite Shirt at Doyle and Sons",
+		"amount": "-$4.31",
+		"balance": "$11.90",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/30/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,011.90",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/31/22",
+		"description": "Fresh Computer at Stiedemann",
+		"amount": "-$548.16",
+		"balance": "$3,463.74",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "05/31/22",
+		"description": "Cotton Pizza at Gibson and Sons",
+		"amount": "-$434.56",
+		"balance": "$3,029.18",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/01/22",
+		"description": "Wooden Bacon at Kertzmann Group",
+		"amount": "-$490.42",
+		"balance": "$2,538.76",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/03/22",
+		"description": "Plastic Gloves at McKenzie Group",
+		"amount": "-$360.39",
+		"balance": "$2,178.37",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/03/22",
+		"description": "Metal Chips at Kemmer",
+		"amount": "-$686.5",
+		"balance": "$1,491.87",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/05/22",
+		"description": "Frozen Tuna at Torphy Group",
+		"amount": "-$579.32",
+		"balance": "$912.55",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/06/22",
+		"description": "Plastic Soap at Sanford and Sons",
+		"amount": "-$354.36",
+		"balance": "$558.19",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/07/22",
+		"description": "Steel Ball at Kihn",
+		"amount": "-$495.76",
+		"balance": "$62.43",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/07/22",
+		"description": "Bronze Gloves at Medhurst Group",
+		"amount": "-$1.6",
+		"balance": "$60.83",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/09/22",
+		"description": "Wooden Bike at Erdman Group",
+		"amount": "-$46.66",
+		"balance": "$14.17",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/09/22",
+		"description": "Wooden Hat at Dicki",
+		"amount": "-$9.99",
+		"balance": "$4.18",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/10/22",
+		"description": "Bronze Pizza at Daniel Group",
+		"amount": "-$2.85",
+		"balance": "$1.33",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/11/22",
+		"description": "Fresh Cheese at Koch",
+		"amount": "-$0.81",
+		"balance": "$0.52",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/13/22",
+		"description": "Bronze Salad at Swaniawski and Sons",
+		"amount": "-$-1.59",
+		"balance": "$2.11",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/14/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,002.11",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/15/22",
+		"description": "Metal Bacon at Goldner Group",
+		"amount": "-$603.42",
+		"balance": "$3,398.69",
+		"category": "home",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/16/22",
+		"description": "Bronze Bike at Tillman Group",
+		"amount": "-$36.95",
+		"balance": "$3,361.74",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/17/22",
+		"description": "Soft Table at Gleason",
+		"amount": "-$602.18",
+		"balance": "$2,759.56",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/18/22",
+		"description": "Fresh Pizza at Miller",
+		"amount": "-$320.5",
+		"balance": "$2,439.06",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/19/22",
+		"description": "Cotton Hat at Jacobson Group",
+		"amount": "-$473.56",
+		"balance": "$1,965.50",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/19/22",
+		"description": "Wooden Fish at Jacobson",
+		"amount": "-$473.80",
+		"balance": "$1,491.70",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/21/22",
+		"description": "Concrete Shirt at Block and Sons",
+		"amount": "-$769.4",
+		"balance": "$722.30",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/21/22",
+		"description": "Steel Chair at Kerluke",
+		"amount": "-$424.35",
+		"balance": "$297.95",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/22/22",
+		"description": "Fresh Chicken at Senger and Sons",
+		"amount": "-$91.57",
+		"balance": "$206.38",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/24/22",
+		"description": "Rubber Bike at Medhurst and Sons",
+		"amount": "-$11.52",
+		"balance": "$194.86",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/25/22",
+		"description": "Metal Keyboard at O'Kon",
+		"amount": "-$18.71",
+		"balance": "$176.15",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/25/22",
+		"description": "Rubber Ball at Labadie Group",
+		"amount": "-$122.99",
+		"balance": "$53.16",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/27/22",
+		"description": "Cotton Pants at Dicki and Sons",
+		"amount": "-$6.38",
+		"balance": "$46.78",
+		"category": "music",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/28/22",
+		"description": "Rubber Keyboard at Hahn",
+		"amount": "-$30.93",
+		"balance": "$15.85",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/28/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,015.85",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "06/30/22",
+		"description": "Granite Bacon at Tillman",
+		"amount": "-$87.17",
+		"balance": "$3,928.68",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/01/22",
+		"description": "Frozen Bacon at Goldner",
+		"amount": "-$97.46",
+		"balance": "$3,831.22",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/02/22",
+		"description": "Frozen Fish at Koch",
+		"amount": "-$370.8",
+		"balance": "$3,460.42",
+		"category": "web",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/03/22",
+		"description": "Rubber Chicken at Feest and Sons",
+		"amount": "-$378.0",
+		"balance": "$3,082.42",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/04/22",
+		"description": "Concrete Pizza at Wehner",
+		"amount": "-$675.45",
+		"balance": "$2,406.97",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/05/22",
+		"description": "Rubber Soap at Jones",
+		"amount": "-$679.61",
+		"balance": "$1,727.36",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/05/22",
+		"description": "Cotton Table at Tromp",
+		"amount": "-$337.7",
+		"balance": "$1,389.66",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/07/22",
+		"description": "Fresh Shirt at Doyle",
+		"amount": "-$13.90",
+		"balance": "$1,375.76",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/08/22",
+		"description": "Rubber Pizza at Marvin",
+		"amount": "-$417.93",
+		"balance": "$957.83",
+		"category": "auto",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/09/22",
+		"description": "Steel Cheese at Crona Group",
+		"amount": "-$794.97",
+		"balance": "$162.86",
+		"category": "phone",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/10/22",
+		"description": "Concrete Gloves at Wisoky",
+		"amount": "-$60.22",
+		"balance": "$102.64",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/11/22",
+		"description": "Soft Ball at Prosacco",
+		"amount": "-$56.38",
+		"balance": "$46.26",
+		"category": "mark",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/12/22",
+		"description": "Plastic Fish at Langworth",
+		"amount": "-$15.58",
+		"balance": "$30.68",
+		"category": "groceries",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/12/22",
+		"description": "Fresh Ball at McDermott and Sons",
+		"amount": "-$6.22",
+		"balance": "$24.46",
+		"category": "lisa",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/14/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,024.46",
+		"category": "N/A",
+		"account": "checking-gifts"
+	},
+	{
+		"date": "07/15/22",
+		"description": "Plastic Pants at Mitchell",
+		"amount": "-$646.19",
+		"balance": "$3,378.27",
+		"category": "home",
+		"account": "checking-gifts"
+	}
+]

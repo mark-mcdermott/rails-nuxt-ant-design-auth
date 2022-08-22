@@ -1,0 +1,1570 @@
+[
+	{
+		"date": "01/01/22",
+		"description": "Steel Chips at Jerde and Sons",
+		"amount": "-$597.6",
+		"balance": "$402.40",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/01/22",
+		"description": "Wooden Chair at Keebler",
+		"amount": "-$132.72",
+		"balance": "$269.68",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/02/22",
+		"description": "Plastic Chips at Gleichner",
+		"amount": "-$134.84",
+		"balance": "$134.84",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/04/22",
+		"description": "Steel Shoes at Simonis",
+		"amount": "-$68.93",
+		"balance": "$65.91",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/05/22",
+		"description": "Cotton Soap at Hartmann",
+		"amount": "-$38.71",
+		"balance": "$27.20",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/06/22",
+		"description": "Concrete Cheese at Wunsch",
+		"amount": "-$6.43",
+		"balance": "$20.77",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/06/22",
+		"description": "Cotton Table at Rogahn",
+		"amount": "-$13.95",
+		"balance": "$6.82",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/08/22",
+		"description": "Wooden Mouse at Lebsack",
+		"amount": "-$2.67",
+		"balance": "$4.15",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/09/22",
+		"description": "Wooden Fish at Rau Group",
+		"amount": "-$1.80",
+		"balance": "$2.35",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/10/22",
+		"description": "Steel Pizza at Grant",
+		"amount": "-$1.15",
+		"balance": "$1.20",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/11/22",
+		"description": "Fresh Sausages at Ryan",
+		"amount": "-$0.40",
+		"balance": "$0.80",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/11/22",
+		"description": "Plastic Computer at Mosciski",
+		"amount": "-$0.84",
+		"balance": "$-0.04",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/13/22",
+		"description": "Soft Car at Rice and Sons",
+		"amount": "-$-1.93",
+		"balance": "$1.89",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/14/22",
+		"description": "Cotton Bike at VonRueden and Sons",
+		"amount": "-$0.61",
+		"balance": "$1.28",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/15/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,001.28",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/16/22",
+		"description": "Soft Computer at Wiegand and Sons",
+		"amount": "-$158.32",
+		"balance": "$3,842.96",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/16/22",
+		"description": "Granite Tuna at Dooley and Sons",
+		"amount": "-$573.53",
+		"balance": "$3,269.43",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/18/22",
+		"description": "Bronze Tuna at McKenzie",
+		"amount": "-$184.47",
+		"balance": "$3,084.96",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/19/22",
+		"description": "Cotton Towels at D'Amore",
+		"amount": "-$105.76",
+		"balance": "$2,979.20",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/19/22",
+		"description": "Fresh Fish at Erdman Group",
+		"amount": "-$330.33",
+		"balance": "$2,648.87",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/21/22",
+		"description": "Bronze Towels at Donnelly and Sons",
+		"amount": "-$720.53",
+		"balance": "$1,928.34",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/22/22",
+		"description": "Plastic Salad at Bradtke and Sons",
+		"amount": "-$790.57",
+		"balance": "$1,137.77",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/23/22",
+		"description": "Fresh Pizza at Denesik and Sons",
+		"amount": "-$492.27",
+		"balance": "$645.50",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/24/22",
+		"description": "Cotton Bike at Predovic and Sons",
+		"amount": "-$605.54",
+		"balance": "$39.96",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/24/22",
+		"description": "Wooden Soap at Klein Group",
+		"amount": "-$3.66",
+		"balance": "$36.30",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/26/22",
+		"description": "Steel Ball at Abbott and Sons",
+		"amount": "-$22.10",
+		"balance": "$14.20",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/27/22",
+		"description": "Plastic Hat at Kassulke",
+		"amount": "-$1.7",
+		"balance": "$12.50",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/28/22",
+		"description": "Steel Chair at Lowe",
+		"amount": "-$1.77",
+		"balance": "$10.73",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/29/22",
+		"description": "Steel Keyboard at Treutel",
+		"amount": "-$7.75",
+		"balance": "$2.98",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/30/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,002.98",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "01/30/22",
+		"description": "Metal Pizza at Conn and Sons",
+		"amount": "-$395.55",
+		"balance": "$3,607.43",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/01/22",
+		"description": "Rubber Keyboard at Reinger",
+		"amount": "-$619.30",
+		"balance": "$2,988.13",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/02/22",
+		"description": "Fresh Pants at Lehner and Sons",
+		"amount": "-$506.32",
+		"balance": "$2,481.81",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/03/22",
+		"description": "Metal Computer at Koss",
+		"amount": "-$14.44",
+		"balance": "$2,467.37",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/04/22",
+		"description": "Steel Pizza at Connelly and Sons",
+		"amount": "-$454.48",
+		"balance": "$2,012.89",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/05/22",
+		"description": "Plastic Car at Anderson Group",
+		"amount": "-$450.55",
+		"balance": "$1,562.34",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/06/22",
+		"description": "Concrete Sausages at Langosh and Sons",
+		"amount": "-$488.98",
+		"balance": "$1,073.36",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/07/22",
+		"description": "Soft Sausages at Deckow and Sons",
+		"amount": "-$111.15",
+		"balance": "$962.21",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/07/22",
+		"description": "Frozen Car at Treutel Group",
+		"amount": "-$75.44",
+		"balance": "$886.77",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/09/22",
+		"description": "Concrete Shirt at Daniel Group",
+		"amount": "-$237.93",
+		"balance": "$648.84",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/10/22",
+		"description": "Plastic Computer at Sawayn Group",
+		"amount": "-$475.36",
+		"balance": "$173.48",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/11/22",
+		"description": "Metal Sausages at Simonis and Sons",
+		"amount": "-$28.75",
+		"balance": "$144.73",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/12/22",
+		"description": "Cotton Cheese at Huels and Sons",
+		"amount": "-$116.53",
+		"balance": "$28.20",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/13/22",
+		"description": "Wooden Tuna at Stark",
+		"amount": "-$8.63",
+		"balance": "$19.57",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/13/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,019.57",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/15/22",
+		"description": "Rubber Chicken at Frami Group",
+		"amount": "-$429.6",
+		"balance": "$3,589.97",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/16/22",
+		"description": "Concrete Gloves at Volkman",
+		"amount": "-$712.25",
+		"balance": "$2,877.72",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/16/22",
+		"description": "Metal Bike at Sauer Group",
+		"amount": "-$40.58",
+		"balance": "$2,837.14",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/17/22",
+		"description": "Cotton Keyboard at Barton and Sons",
+		"amount": "-$460.58",
+		"balance": "$2,376.56",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/18/22",
+		"description": "Soft Chicken at Orn",
+		"amount": "-$487.44",
+		"balance": "$1,889.12",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/20/22",
+		"description": "Soft Fish at Larson Group",
+		"amount": "-$582.78",
+		"balance": "$1,306.34",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/21/22",
+		"description": "Fresh Hat at Konopelski",
+		"amount": "-$681.43",
+		"balance": "$624.91",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/21/22",
+		"description": "Plastic Table at Huel Group",
+		"amount": "-$70.28",
+		"balance": "$554.63",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/23/22",
+		"description": "Rubber Tuna at Cormier and Sons",
+		"amount": "-$552.93",
+		"balance": "$1.70",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/24/22",
+		"description": "Steel Keyboard at DuBuque",
+		"amount": "-$0.68",
+		"balance": "$1.02",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/25/22",
+		"description": "Plastic Table at Smith and Sons",
+		"amount": "-$0.39",
+		"balance": "$0.63",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/26/22",
+		"description": "Rubber Chicken at Wiza Group",
+		"amount": "-$-1.59",
+		"balance": "$2.22",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/27/22",
+		"description": "Granite Soap at Okuneva Group",
+		"amount": "-$1.37",
+		"balance": "$0.85",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/28/22",
+		"description": "Fresh Sausages at Balistreri",
+		"amount": "-$0.22",
+		"balance": "$0.63",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "02/28/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,000.63",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/01/22",
+		"description": "Metal Salad at Mitchell and Sons",
+		"amount": "-$567.70",
+		"balance": "$3,432.93",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/02/22",
+		"description": "Steel Car at Gerhold",
+		"amount": "-$201.11",
+		"balance": "$3,231.82",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/04/22",
+		"description": "Bronze Cheese at Kohler",
+		"amount": "-$455.7",
+		"balance": "$2,776.12",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/05/22",
+		"description": "Wooden Keyboard at Spinka",
+		"amount": "-$18.16",
+		"balance": "$2,757.96",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/06/22",
+		"description": "Wooden Hat at Swift Group",
+		"amount": "-$91.0",
+		"balance": "$2,666.96",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/07/22",
+		"description": "Cotton Car at Adams",
+		"amount": "-$572.82",
+		"balance": "$2,094.14",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/08/22",
+		"description": "Fresh Mouse at Altenwerth",
+		"amount": "-$217.19",
+		"balance": "$1,876.95",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/08/22",
+		"description": "Steel Gloves at Quitzon",
+		"amount": "-$308.48",
+		"balance": "$1,568.47",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/10/22",
+		"description": "Granite Bike at Schamberger and Sons",
+		"amount": "-$508.48",
+		"balance": "$1,059.99",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/11/22",
+		"description": "Frozen Chicken at Berge",
+		"amount": "-$479.20",
+		"balance": "$580.79",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/12/22",
+		"description": "Plastic Sausages at Monahan Group",
+		"amount": "-$314.40",
+		"balance": "$266.39",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/13/22",
+		"description": "Soft Chicken at Streich",
+		"amount": "-$71.96",
+		"balance": "$194.43",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/13/22",
+		"description": "Wooden Computer at Moore Group",
+		"amount": "-$148.19",
+		"balance": "$46.24",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/15/22",
+		"description": "Soft Shoes at Konopelski",
+		"amount": "-$35.91",
+		"balance": "$10.33",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/16/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,010.33",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/17/22",
+		"description": "Cotton Computer at Mohr",
+		"amount": "-$692.10",
+		"balance": "$3,318.23",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/18/22",
+		"description": "Cotton Keyboard at O'Kon Group",
+		"amount": "-$60.96",
+		"balance": "$3,257.27",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/19/22",
+		"description": "Metal Bacon at Walker and Sons",
+		"amount": "-$452.87",
+		"balance": "$2,804.40",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/20/22",
+		"description": "Concrete Bike at Stehr",
+		"amount": "-$447.69",
+		"balance": "$2,356.71",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/21/22",
+		"description": "Plastic Keyboard at Cartwright",
+		"amount": "-$587.98",
+		"balance": "$1,768.73",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/22/22",
+		"description": "Cotton Bacon at Blick",
+		"amount": "-$229.38",
+		"balance": "$1,539.35",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/23/22",
+		"description": "Concrete Towels at Flatley and Sons",
+		"amount": "-$619.42",
+		"balance": "$919.93",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/24/22",
+		"description": "Plastic Towels at Gaylord and Sons",
+		"amount": "-$759.95",
+		"balance": "$159.98",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/24/22",
+		"description": "Concrete Bacon at Kemmer Group",
+		"amount": "-$33.53",
+		"balance": "$126.45",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/26/22",
+		"description": "Bronze Car at Runolfsdottir",
+		"amount": "-$48.44",
+		"balance": "$78.01",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/26/22",
+		"description": "Plastic Bike at Grady and Sons",
+		"amount": "-$64.28",
+		"balance": "$13.73",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/28/22",
+		"description": "Plastic Tuna at Beer and Sons",
+		"amount": "-$3.98",
+		"balance": "$9.75",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/29/22",
+		"description": "Granite Gloves at Corkery and Sons",
+		"amount": "-$1.96",
+		"balance": "$7.79",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/30/22",
+		"description": "Fresh Sausages at Lind",
+		"amount": "-$4.30",
+		"balance": "$3.49",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "03/31/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,003.49",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/01/22",
+		"description": "Soft Hat at Deckow Group",
+		"amount": "-$535.5",
+		"balance": "$3,467.99",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/02/22",
+		"description": "Rubber Gloves at Wehner",
+		"amount": "-$688.70",
+		"balance": "$2,779.29",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/03/22",
+		"description": "Plastic Shoes at Olson and Sons",
+		"amount": "-$583.94",
+		"balance": "$2,195.35",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/04/22",
+		"description": "Rubber Hat at Stroman",
+		"amount": "-$136.83",
+		"balance": "$2,058.52",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/05/22",
+		"description": "Steel Towels at Balistreri and Sons",
+		"amount": "-$192.57",
+		"balance": "$1,865.95",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/06/22",
+		"description": "Plastic Shirt at Stoltenberg and Sons",
+		"amount": "-$570.89",
+		"balance": "$1,295.06",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/07/22",
+		"description": "Steel Table at Rau Group",
+		"amount": "-$467.36",
+		"balance": "$827.70",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/08/22",
+		"description": "Fresh Bike at Auer and Sons",
+		"amount": "-$532.57",
+		"balance": "$295.13",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/09/22",
+		"description": "Cotton Hat at Green",
+		"amount": "-$49.89",
+		"balance": "$245.24",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/10/22",
+		"description": "Granite Salad at Walker Group",
+		"amount": "-$125.79",
+		"balance": "$119.45",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/10/22",
+		"description": "Bronze Hat at Paucek and Sons",
+		"amount": "-$108.70",
+		"balance": "$10.75",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/11/22",
+		"description": "Soft Tuna at Lueilwitz",
+		"amount": "-$1.47",
+		"balance": "$9.28",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/12/22",
+		"description": "Soft Chair at Lehner",
+		"amount": "-$2.71",
+		"balance": "$6.57",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/13/22",
+		"description": "Plastic Shirt at Kreiger Group",
+		"amount": "-$1.13",
+		"balance": "$5.44",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/14/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,005.44",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/16/22",
+		"description": "Steel Ball at Leffler",
+		"amount": "-$213.20",
+		"balance": "$3,792.24",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/17/22",
+		"description": "Wooden Chips at Runte Group",
+		"amount": "-$763.67",
+		"balance": "$3,028.57",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/18/22",
+		"description": "Cotton Gloves at Corkery",
+		"amount": "-$432.21",
+		"balance": "$2,596.36",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/19/22",
+		"description": "Fresh Keyboard at White",
+		"amount": "-$462.80",
+		"balance": "$2,133.56",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/20/22",
+		"description": "Granite Keyboard at Hamill",
+		"amount": "-$559.5",
+		"balance": "$1,574.06",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/20/22",
+		"description": "Wooden Computer at Hodkiewicz and Sons",
+		"amount": "-$702.66",
+		"balance": "$871.40",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/22/22",
+		"description": "Wooden Computer at Weber",
+		"amount": "-$762.42",
+		"balance": "$108.98",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/23/22",
+		"description": "Concrete Shoes at Kassulke",
+		"amount": "-$22.5",
+		"balance": "$86.48",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/24/22",
+		"description": "Metal Table at O'Keefe",
+		"amount": "-$52.30",
+		"balance": "$34.18",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/24/22",
+		"description": "Cotton Shoes at Schmidt",
+		"amount": "-$12.47",
+		"balance": "$21.71",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/26/22",
+		"description": "Frozen Hat at Hoppe",
+		"amount": "-$7.70",
+		"balance": "$14.01",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/27/22",
+		"description": "Plastic Sausages at Tromp",
+		"amount": "-$4.73",
+		"balance": "$9.28",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/28/22",
+		"description": "Fresh Bacon at Hauck",
+		"amount": "-$2.32",
+		"balance": "$6.96",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/29/22",
+		"description": "Cotton Cheese at Lueilwitz Group",
+		"amount": "-$3.0",
+		"balance": "$3.96",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "04/29/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,003.96",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/01/22",
+		"description": "Concrete Car at Braun",
+		"amount": "-$140.36",
+		"balance": "$3,863.60",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/01/22",
+		"description": "Bronze Tuna at Ledner",
+		"amount": "-$785.47",
+		"balance": "$3,078.13",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/03/22",
+		"description": "Metal Bike at Harris Group",
+		"amount": "-$173.72",
+		"balance": "$2,904.41",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/04/22",
+		"description": "Fresh Pizza at Beer",
+		"amount": "-$433.13",
+		"balance": "$2,471.28",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/05/22",
+		"description": "Frozen Chair at Metz",
+		"amount": "-$692.19",
+		"balance": "$1,779.09",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/05/22",
+		"description": "Bronze Bike at Stoltenberg Group",
+		"amount": "-$399.42",
+		"balance": "$1,379.67",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/07/22",
+		"description": "Bronze Shoes at Orn",
+		"amount": "-$447.97",
+		"balance": "$931.70",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/08/22",
+		"description": "Rubber Shirt at Watsica",
+		"amount": "-$521.16",
+		"balance": "$410.54",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/09/22",
+		"description": "Concrete Soap at Hoeger Group",
+		"amount": "-$137.43",
+		"balance": "$273.11",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/09/22",
+		"description": "Concrete Chicken at Renner and Sons",
+		"amount": "-$156.94",
+		"balance": "$116.17",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/11/22",
+		"description": "Fresh Cheese at Reynolds Group",
+		"amount": "-$102.57",
+		"balance": "$13.60",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/12/22",
+		"description": "Frozen Ball at Brekke and Sons",
+		"amount": "-$3.35",
+		"balance": "$10.25",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/13/22",
+		"description": "Bronze Table at Beatty",
+		"amount": "-$5.4",
+		"balance": "$4.85",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/14/22",
+		"description": "Bronze Chips at Bogisich Group",
+		"amount": "-$1.60",
+		"balance": "$3.25",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/14/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,003.25",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/16/22",
+		"description": "Plastic Shoes at Schmitt",
+		"amount": "-$6.51",
+		"balance": "$3,996.74",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/17/22",
+		"description": "Granite Tuna at Gleason Group",
+		"amount": "-$261.9",
+		"balance": "$3,734.84",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/18/22",
+		"description": "Rubber Car at Conn",
+		"amount": "-$348.28",
+		"balance": "$3,386.56",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/19/22",
+		"description": "Bronze Fish at Rodriguez Group",
+		"amount": "-$490.36",
+		"balance": "$2,896.20",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/19/22",
+		"description": "Rubber Shirt at Hartmann Group",
+		"amount": "-$201.76",
+		"balance": "$2,694.44",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/20/22",
+		"description": "Concrete Cheese at Beer",
+		"amount": "-$787.15",
+		"balance": "$1,907.29",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/21/22",
+		"description": "Fresh Ball at Abshire",
+		"amount": "-$227.29",
+		"balance": "$1,680.00",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/23/22",
+		"description": "Frozen Chair at McCullough and Sons",
+		"amount": "-$307.8",
+		"balance": "$1,372.20",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/23/22",
+		"description": "Wooden Keyboard at Cassin and Sons",
+		"amount": "-$398.48",
+		"balance": "$973.72",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/25/22",
+		"description": "Bronze Table at Rippin Group",
+		"amount": "-$669.75",
+		"balance": "$303.97",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/26/22",
+		"description": "Metal Car at Lubowitz Group",
+		"amount": "-$102.94",
+		"balance": "$201.03",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/27/22",
+		"description": "Plastic Hat at Wehner",
+		"amount": "-$48.35",
+		"balance": "$152.68",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/28/22",
+		"description": "Cotton Chips at Moore Group",
+		"amount": "-$70.4",
+		"balance": "$82.28",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/29/22",
+		"description": "Frozen Towels at Kerluke Group",
+		"amount": "-$21.28",
+		"balance": "$61.00",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/30/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,061.00",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "05/31/22",
+		"description": "Soft Chips at Kiehn",
+		"amount": "-$483.94",
+		"balance": "$3,577.06",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/01/22",
+		"description": "Fresh Fish at Braun Group",
+		"amount": "-$344.77",
+		"balance": "$3,232.29",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/01/22",
+		"description": "Rubber Cheese at Kilback",
+		"amount": "-$368.71",
+		"balance": "$2,863.58",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/03/22",
+		"description": "Plastic Bacon at Dare Group",
+		"amount": "-$677.52",
+		"balance": "$2,186.06",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/04/22",
+		"description": "Concrete Chips at Jast Group",
+		"amount": "-$589.65",
+		"balance": "$1,596.41",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/05/22",
+		"description": "Steel Shirt at Kirlin",
+		"amount": "-$53.48",
+		"balance": "$1,542.93",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/06/22",
+		"description": "Soft Fish at Bayer Group",
+		"amount": "-$459.99",
+		"balance": "$1,082.94",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/07/22",
+		"description": "Granite Shirt at Bradtke",
+		"amount": "-$77.57",
+		"balance": "$1,005.37",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/08/22",
+		"description": "Concrete Shoes at Pfeffer and Sons",
+		"amount": "-$464.30",
+		"balance": "$541.07",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/08/22",
+		"description": "Wooden Bike at MacGyver Group",
+		"amount": "-$276.5",
+		"balance": "$264.57",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/10/22",
+		"description": "Bronze Pants at Shields",
+		"amount": "-$215.78",
+		"balance": "$48.79",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/10/22",
+		"description": "Plastic Chair at Murray Group",
+		"amount": "-$15.16",
+		"balance": "$33.63",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/12/22",
+		"description": "Cotton Table at Prohaska Group",
+		"amount": "-$30.73",
+		"balance": "$2.90",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/13/22",
+		"description": "Cotton Car at Schinner",
+		"amount": "-$1.47",
+		"balance": "$1.43",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/14/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,001.43",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/14/22",
+		"description": "Rubber Computer at Hoppe",
+		"amount": "-$688.80",
+		"balance": "$3,312.63",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/15/22",
+		"description": "Bronze Chair at Fahey",
+		"amount": "-$437.25",
+		"balance": "$2,875.38",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/17/22",
+		"description": "Frozen Chicken at Leffler",
+		"amount": "-$358.86",
+		"balance": "$2,516.52",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/18/22",
+		"description": "Soft Chicken at Denesik",
+		"amount": "-$774.2",
+		"balance": "$1,742.32",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/19/22",
+		"description": "Bronze Chicken at Wiza and Sons",
+		"amount": "-$715.77",
+		"balance": "$1,026.55",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/20/22",
+		"description": "Wooden Gloves at Ferry Group",
+		"amount": "-$669.23",
+		"balance": "$357.32",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/21/22",
+		"description": "Rubber Soap at Mertz",
+		"amount": "-$26.27",
+		"balance": "$331.05",
+		"category": "web",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/22/22",
+		"description": "Cotton Hat at Koepp",
+		"amount": "-$210.55",
+		"balance": "$120.50",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/23/22",
+		"description": "Wooden Hat at Murazik and Sons",
+		"amount": "-$117.98",
+		"balance": "$2.52",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/24/22",
+		"description": "Concrete Soap at Klein Group",
+		"amount": "-$1.90",
+		"balance": "$0.62",
+		"category": "daycare",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/25/22",
+		"description": "Soft Chips at Bogan and Sons",
+		"amount": "-$-1.0",
+		"balance": "$1.62",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/26/22",
+		"description": "Rubber Car at Ankunding and Sons",
+		"amount": "-$0.96",
+		"balance": "$0.66",
+		"category": "auto",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/27/22",
+		"description": "Granite Sausages at Turner",
+		"amount": "-$0.40",
+		"balance": "$0.26",
+		"category": "phone",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/28/22",
+		"description": "Bronze Table at VonRueden",
+		"amount": "-$-1.33",
+		"balance": "$1.59",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/29/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,001.59",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "06/30/22",
+		"description": "Concrete Bike at Weber",
+		"amount": "-$255.53",
+		"balance": "$3,746.06",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/01/22",
+		"description": "Bronze Bike at D'Amore and Sons",
+		"amount": "-$38.76",
+		"balance": "$3,707.30",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/02/22",
+		"description": "Bronze Gloves at Ward Group",
+		"amount": "-$97.39",
+		"balance": "$3,609.91",
+		"category": "lisa",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/03/22",
+		"description": "Wooden Bacon at Pacocha",
+		"amount": "-$296.21",
+		"balance": "$3,313.70",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/03/22",
+		"description": "Plastic Chair at Kuhic Group",
+		"amount": "-$636.16",
+		"balance": "$2,677.54",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/04/22",
+		"description": "Wooden Cheese at Beahan and Sons",
+		"amount": "-$520.55",
+		"balance": "$2,156.99",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/06/22",
+		"description": "Cotton Chair at Bins Group",
+		"amount": "-$511.1",
+		"balance": "$1,645.89",
+		"category": "home",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/07/22",
+		"description": "Wooden Sausages at Rohan Group",
+		"amount": "-$590.93",
+		"balance": "$1,054.96",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/08/22",
+		"description": "Wooden Sausages at Kuhn and Sons",
+		"amount": "-$385.83",
+		"balance": "$669.13",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/08/22",
+		"description": "Concrete Pizza at Sipes and Sons",
+		"amount": "-$128.0",
+		"balance": "$541.13",
+		"category": "groceries",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/09/22",
+		"description": "Wooden Bike at Schinner",
+		"amount": "-$443.88",
+		"balance": "$97.25",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/10/22",
+		"description": "Bronze Pizza at Raynor",
+		"amount": "-$26.42",
+		"balance": "$70.83",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/12/22",
+		"description": "Concrete Pants at Zboncak Group",
+		"amount": "-$33.71",
+		"balance": "$37.12",
+		"category": "mark",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/13/22",
+		"description": "Plastic Pants at Dicki",
+		"amount": "-$20.98",
+		"balance": "$16.14",
+		"category": "music",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/13/22",
+		"description": "paycheck",
+		"amount": "$4,000",
+		"balance": "$4,016.14",
+		"category": "N/A",
+		"account": "checking-travel"
+	},
+	{
+		"date": "07/15/22",
+		"description": "Wooden Pizza at Keeling and Sons",
+		"amount": "-$689.51",
+		"balance": "$3,326.63",
+		"category": "mark",
+		"account": "checking-travel"
+	}
+]

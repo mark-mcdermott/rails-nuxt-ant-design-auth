@@ -1,0 +1,6 @@
+Account.create(:name => 'checking_free_checking', :account_type_id => 1, :user_id => 1)
+Account.create(:name => 'checking_nestegg', :account_type_id => 1, :user_id => 1)
+Account.create(:name => 'checking_travel', :account_type_id => 1, :user_id => 1)
+Account.create(:name => 'checking_gifts', :account_type_id => 1, :user_id => 1)
+Account.create(:name => 'checking_car', :account_type_id => 1, :user_id => 1)
+Account.create(:name => 'credit', :account_type_id => 2, :user_id => 1)
