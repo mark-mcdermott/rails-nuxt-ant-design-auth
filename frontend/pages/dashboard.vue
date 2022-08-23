@@ -867,14 +867,45 @@ export default ({
 // ! ||--------------------------------------------------------------------------------||
 
   mounted () { 
+
+    // redirect to sign in page if not logged in
+    if (this.$auth == undefined || this.$auth.user == undefined || !this.$auth.user) {
+      this.$router.push('/sign-in')
+    }
     
-    // call finances api here!!
-    const userId = this.$auth.user.id;
+    // get data from backend user finances api call
+    const userId = this.$auth.user.id;  
     const financesApi = '/finances/' + userId;
     this.$axios.$get(financesApi)
       .then(finances => {
         console.log(finances)
+
+        this.assetAccts = finances.accounts.asset_accounts;
+        this.debtAccts = finances.accounts.debt_accounts;
+
       });
+
+
+          // populate sidebar accounts & line chart
+    // const userId = this.$auth.user.id;
+    // const accountsApi = '/accounts/' + userId;
+    /*this.$axios.$get(accountsApi)
+      .then(accts => {
+        let userAssetAccts = [];
+        let userDebtAccts = [];
+        accts.forEach(acct => {
+          const acctId = acct.id;
+          const acctName = slugToMixedCaseWords(acct.name); 
+          if (acct.account_type_id == 1) {
+            userAssetAccts.push({ id: acctId, name: acctName });
+          } else if (acct.account_type_id == 2) {
+            userDebtAccts.push({ id: acctId, name: acctName });
+          }
+        })
+        this.assetAccts = userAssetAccts;
+        this.debtAccts = userDebtAccts;
+      })
+      .then(() => {
 
     /*this.tableData = [
       {
@@ -924,9 +955,7 @@ export default ({
     // const barChartCtx = this.$refs.barChart.getContext("2d");
     // this.renderBarChart(barChartCtx);
 
-    if (this.$auth == undefined || this.$auth.user == undefined || !this.$auth.user) {
-      this.$router.push('/sign-in')
-    }
+
 
 
     // populate widgets

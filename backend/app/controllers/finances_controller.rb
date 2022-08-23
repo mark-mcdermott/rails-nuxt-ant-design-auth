@@ -10,6 +10,25 @@ class FinancesController < ApplicationController
     debt_acct_id = AccountType.where('name' =>'debt').first.id
     asset_accounts = all_accounts.where('accounts.account_type_id' => asset_acct_id)
     debt_accounts = all_accounts.where('accounts.account_type_id' => debt_acct_id)
+    
+    all_accounts = all_accounts.as_json
+    all_accounts.each do |acct|
+      acct.store('slug', acct['name'])
+      acct['name'] = acct['name'].titleize
+    end
+    
+    asset_accounts = asset_accounts.as_json
+    asset_accounts.each do |acct|
+      acct.store('slug', acct['name'])
+      acct['name'] = acct['name'].titleize
+    end
+    
+    debt_accounts = debt_accounts.as_json
+    debt_accounts.each do |acct|
+      acct.store('slug', acct['name'])
+      acct['name'] = acct['name'].titleize
+    end
+
     accounts = {'all_accounts' => all_accounts, 'asset_accounts' => asset_accounts, 'debt_accounts' => debt_accounts}
 
     # assets
@@ -42,11 +61,11 @@ class FinancesController < ApplicationController
     end
 
     account_transactions = {}
-    all_accounts.each do |account| 
-      acct_name = account.name
-      these_transactions = User.select('transactions.id,transactions.account_id,transactions.date,transactions.description,transactions.purchase_type_id,transactions.amount,transactions.balance').joins(:transactions).where(id: user).where(:transactions => {:account_id => account.id})
-      account_transactions[acct_name] = these_transactions
-    end
+    # all_accounts.each do |account| 
+    #   acct_name = account.name
+    #   these_transactions = User.select('transactions.id,transactions.account_id,transactions.date,transactions.description,transactions.purchase_type_id,transactions.amount,transactions.balance').joins(:transactions).where(id: user).where(:transactions => {:account_id => account.id})
+    #   account_transactions[acct_name] = these_transactions
+    # end
     transactions = {'all_transactions' => all_transactions, 'account_transactions' => account_transactions}
 
     # TODO: add balances to data object
