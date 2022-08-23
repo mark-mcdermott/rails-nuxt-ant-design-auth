@@ -4,4 +4,6 @@ class User < ApplicationRecord
          :jwt_authenticatable, 
          jwt_revocation_strategy: JwtDenylist
   has_many :accounts
+  has_many :budgets
+  has_many :transactions
 end
