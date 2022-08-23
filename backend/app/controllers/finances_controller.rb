@@ -4,6 +4,8 @@ class FinancesController < ApplicationController
   def show    
     user = params[:user]
 
+    all_accounts = User.select('accounts.id,accounts.name,accounts.account_type_id,users.id as user_id,users.email').joins(:accounts).where(id: user)
+
     # accounts
     # all_accounts = User.select('accounts.id,accounts.name,accounts.account_type_id,users.id as user_id,users.email').joins(:accounts).where(id: user)
     # asset_acct_id = AccountType.where('name' =>'asset').first.id
@@ -56,7 +58,7 @@ class FinancesController < ApplicationController
     # finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions}
     # finances = {'accounts' => accounts}
     # render json: finances
-    render json: 'hi'
+    render json: all_accounts
   end 
 
 end

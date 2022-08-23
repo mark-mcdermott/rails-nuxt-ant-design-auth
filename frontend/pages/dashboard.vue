@@ -872,9 +872,9 @@ export default ({
     const userId = this.$auth.user.id;
     const financesApi = '/finances/' + userId;
     this.$axios.$get(financesApi)
-    //   .then(finances => {
-    //     console.log('hi')
-    //   });
+      .then(finances => {
+        console.log(finances)
+      });
 
     /*this.tableData = [
       {
