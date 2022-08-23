@@ -359,7 +359,7 @@ export default ({
 
   data() {
     return {
-      
+      finances: null,
       pageTitle: 'Dashboard',
       lineChartTitle: 'Main Checking & Credit Card',
       lineChartDataSet1Title: '',
@@ -487,21 +487,21 @@ export default ({
 // ! ||                                     METHODS                                    ||
 // ! ||--------------------------------------------------------------------------------||
 
-  methods: {
+  // methods: {
 
-    dashboardClick: function() {
-      this.pageTitle = 'Dashboard';
-      this.lineChartTitle = 'Main Checking & Credit Card';
-      this.showLineChartLegend = true;
-      this.showWidgets = true;
-      this.showBarChart = true;
-      this.showTable = false;
-      this.lineChartCols = 14;
+  //   dashboardClick: function() {
+  //     this.pageTitle = 'Dashboard';
+  //     this.lineChartTitle = 'Main Checking & Credit Card';
+  //     this.showLineChartLegend = true;
+  //     this.showWidgets = true;
+  //     this.showBarChart = true;
+  //     this.showTable = false;
+  //     this.lineChartCols = 14;
 
       // populate sidebar accounts & line chart
-      const userId = this.$auth.user.id;
-      const accountsApi = '/accounts/' + userId;
-      this.$axios.$get(accountsApi)
+      // const userId = this.$auth.user.id;
+      // const accountsApi = '/accounts/' + userId;
+      /*this.$axios.$get(accountsApi)
         .then(accts => {
           let userAssetAccts = [];
           let userDebtAccts = [];
@@ -573,9 +573,9 @@ export default ({
           });
         });
 
-    },
+    },*/
 
-    accountClick: function(acctId,name) {
+    /*accountClick: function(acctId,name) {
       
       this.pageTitle = name;
       this.lineChartTitle = name,
@@ -618,9 +618,9 @@ export default ({
                 return {key, date, description, amount, balance};
               });
         })
-    },
+    },*/
 
-    toggleSidebar( value ) {
+    /*toggleSidebar( value ) {
       this.sidebarCollapsed = value ;
     },
     toggleSettingsDrawer( value ) {
@@ -637,9 +637,9 @@ export default ({
     },
     logout: function () {
       this.$auth.logout().catch(e => {this.error = e + ''})
-    },
+    },*/
 
-    renderBarChart: function(barChartContents) {
+    /*renderBarChart: function(barChartContents) {
       this.barChartContents = barChartContents;
 
       const barChartCtx = this.$refs.barChart.getContext("2d");
@@ -722,9 +722,9 @@ export default ({
           },
         }
       });
-    },
+    },*/
 
-    renderLineChart: function(chartContent) {
+    /*renderLineChart: function(chartContent) {
       this.lineChartContents = chartContent;
 
       const options = {
@@ -833,11 +833,11 @@ export default ({
 
     }
 
-  },
+  },*/
 
   computed: {
 
-    computedLineChartContents : {
+    /*computedLineChartContents : {
       get() {
         return this.lineChartContents;
       },
@@ -853,7 +853,7 @@ export default ({
       set(obj) {
         this.barChartContents = obj
       }
-    },
+    },*/
 
     // Sets layout's element's class based on route's meta data.
     layoutClass() {
@@ -867,7 +867,16 @@ export default ({
 // ! ||--------------------------------------------------------------------------------||
 
   mounted () { 
-    this.tableData = [
+    
+    // call finances api here!!
+    const userId = this.$auth.user.id;
+    const financesApi = '/finances/' + userId;
+    this.$axios.$get(financesApi)
+    //   .then(finances => {
+    //     console.log('hi')
+    //   });
+
+    /*this.tableData = [
       {
         key: '1',
         date: '2/7/22',
@@ -910,7 +919,7 @@ export default ({
         amount: '$4.72',
         balance: '$14,000',
       },
-    ];
+    ];*/
 
     // const barChartCtx = this.$refs.barChart.getContext("2d");
     // this.renderBarChart(barChartCtx);
@@ -919,10 +928,11 @@ export default ({
       this.$router.push('/sign-in')
     }
 
+
     // populate widgets
-    const userId = this.$auth.user.id;
+    // const userId = this.$auth.user.id;
     // main checking balance widget
-    const accountsApi = '/accounts/' + userId;
+    /*const accountsApi = '/accounts/' + userId;
     this.$axios.$get(accountsApi)
       .then(accts => {
         const mainCheckingId = accts[0]['id'];
@@ -960,18 +970,18 @@ export default ({
           .then((nesteggBal) => {
             this.counterWidgetStats[3].value = nesteggBal;
           })
-      });
+      });*/
 
 
     // total checking balance widget
-    const checkingBalanceApi = /checking-balance/ + userId;
+    /*const checkingBalanceApi = /checking-balance/ + userId;
     this.$axios.$get(checkingBalanceApi)
       .then((checkingBal) => { 
         this.counterWidgetStats[1].value = checkingBal 
-      });    
+      });*/   
 
     // get bar chart 
-    const cashNetWorthApi = /cash-net-worth/ + userId;
+   /*const cashNetWorthApi = /cash-net-worth/ + userId;
     this.$axios.$get(cashNetWorthApi)
       .then((cashNetWorth) => { 
         let labels = [];
@@ -982,11 +992,11 @@ export default ({
         });
         let barChartContents = { 'labels': labels, 'data': data }
         this.renderBarChart(barChartContents);
-      });    
+      });    */
     
 
     // get other assets (for below bar chart)
-    const otherAssetsApi = /other-assets/ + userId;
+    /*const otherAssetsApi = /other-assets/ + userId;
     this.$axios.$get(otherAssetsApi)
       .then((otherAssets) => { 
         otherAssets.forEach((asset) => {
@@ -1000,13 +1010,13 @@ export default ({
           
         });
         
-      });    
+      });   */ 
     
 
     // populate sidebar accounts & line chart
     // const userId = this.$auth.user.id;
     // const accountsApi = '/accounts/' + userId;
-    this.$axios.$get(accountsApi)
+    /*this.$axios.$get(accountsApi)
       .then(accts => {
         let userAssetAccts = [];
         let userDebtAccts = [];
@@ -1060,7 +1070,7 @@ export default ({
         }).then(() => {
           this.renderLineChart(lineChartContent);
         });
-      });  
+      });  */
   },
   // Right before the component is destroyed,
   // also destroy the chart.

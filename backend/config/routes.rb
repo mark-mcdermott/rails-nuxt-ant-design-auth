@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     devise_for :users, controllers: {sessions: 'sessions'}
     devise_scope :user do
       get 'users/current', to: 'sessions#show'
+      get 'finances/:user', to: 'finances#show'
     end
   end
 end
