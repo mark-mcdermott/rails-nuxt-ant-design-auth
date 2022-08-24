@@ -61,18 +61,49 @@ class FinancesController < ApplicationController
     end
 
     account_transactions = {}
-    # all_accounts.each do |account| 
-    #   acct_name = account.name
-    #   these_transactions = User.select('transactions.id,transactions.account_id,transactions.date,transactions.description,transactions.purchase_type_id,transactions.amount,transactions.balance').joins(:transactions).where(id: user).where(:transactions => {:account_id => account.id})
-    #   account_transactions[acct_name] = these_transactions
-    # end
+    all_accounts.each do |account| 
+      acct_name = account['slug']
+      these_transactions = User.select('transactions.id,transactions.account_id,transactions.date,transactions.description,transactions.purchase_type_id,transactions.amount,transactions.balance').joins(:transactions).where(id: user).where(:transactions => {:account_id => account['id']})
+      account_transactions[acct_name] = these_transactions
+    end
     transactions = {'all_transactions' => all_transactions, 'account_transactions' => account_transactions}
 
-    # TODO: add balances to data object
-    # TODO: add chart labels/data to data object (30 days, 3 months, 6 months, 12 months, all time)
+    # balances 
+    sparse_balances = {}
+    account_transactions.each do |acct_name, transactions| 
+      sparse_balances_arr = []
+      transactions.each do |transaction|
+        date = transaction['date']
+        balance = transaction['balance']
+        balance_hash = { 'date' => date, 'balance' => balance}
+        sparse_balances_arr.push(balance_hash)
+      end
+      sparse_balances[acct_name] = sparse_balances_arr
+    end
+
+    filled_balances = {}
+
+    sparse_balances.each do |acct_name, sparse_balances| 
+      filled_balances_arr = []
+
+      for i in 0..sparse_balances.length
+        puts "Value of local variable is #{i}"
+      end
+
+      # sparse_balances.each do |sparse_balance|
+      #   puts sparse_balance
+      # end
+
+      filled_balances[acct_name] = filled_balances_arr
+    end
+
+
+    balances = {'sparse_balances' => sparse_balances}
+
+
     
 
-    finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions}
+    finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions, 'balances' => balances}
     # render json: finances
     render json: finances
   end 

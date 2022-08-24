@@ -63,9 +63,9 @@ export default {
       }
     },
     redirect: {
-      login: '/log-in',
+      login: '/sign-in',
       logout: '/',
-      callback: '/log-in',
+      callback: '/sign-in',
       home: '/'
     }
   },
