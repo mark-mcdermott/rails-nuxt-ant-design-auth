@@ -85,20 +85,40 @@ class FinancesController < ApplicationController
 
     sparse_balances.each do |acct_name, sparse_balances| 
       filled_balances_arr = []
+      start_date = sparse_balances[0].as_json['date'].to_datetime
+      counter = 0
+      last_bal = nil
+      debugger
+      for date_counter in start_date..Time.now
+        # puts counter,sparse_balances[counter],sparse_balances[counter].as_json
+        this_bal_obj = sparse_balances[counter].as_json
+        if this_bal_obj != nil && this_bal_obj['date'] != nil
+          date = this_bal_obj['date'].to_datetime
 
-      for i in 0..sparse_balances.length
-        puts "Value of local variable is #{i}"
+          loop do
+            date_counter == date
+            if sparse_balances != nil && sparse_balances[counter] != nil
+              balance = sparse_balances[counter].as_json['balance']
+              filled_balances_arr.push({'date' => date, 'balance' => balance})
+              last_bal = balance
+            end
+            counter += 1
+            this_bal_obj = sparse_balances[counter].as_json
+
+          end
+        end
+          
+        if date_counter != date
+          filled_balances_arr.push({'date' => date, 'balance' => last_bal})
+        end
+        counter += 1
+        filled_balances[acct_name] = filled_balances_arr
       end
 
-      # sparse_balances.each do |sparse_balance|
-      #   puts sparse_balance
-      # end
-
-      filled_balances[acct_name] = filled_balances_arr
     end
 
 
-    balances = {'sparse_balances' => sparse_balances}
+    balances = {'sparse_balances' => sparse_balances, 'filled_balances' => filled_balances}
 
 
     
