@@ -882,6 +882,9 @@ export default ({
 
         this.assetAccts = finances.accounts.asset_accounts;
         this.debtAccts = finances.accounts.debt_accounts;
+        this.counterWidgetStats[0].value = finances.balances.end_balances.main_checking;
+        this.counterWidgetStats[2].value = finances.balances.end_balances.main_credit_card;
+        this.counterWidgetStats[3].value = finances.balances.end_balances.nestegg;
 
       });
 
