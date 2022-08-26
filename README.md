@@ -10,11 +10,15 @@ This is a simple placeholder app that demonstrates working signup/login/logout f
 ### To Install And Run (Simple Way)
 - You must have PostgreSQL running in the background. See https://www.postgresql.org/download/
 - `git clone https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth`
-- `cd rails-nuxt-ant-design-auth`
-- In first terminal tab run:
-- `./install-and-run-backend.sh`
-- Open a second terminal tab and run:
-- `./install-and-run-frontend.sh`
+- In first terminal tab:
+  - `cd rails-nuxt-ant-design-auth`
+  - `./install-and-run-backend.sh`
+  - This will take a few minutes to finish installing and to start the backend server, but you can move on to the next step while it's running
+- In a second terminal tab:
+  - `cd rails-nuxt-ant-design-auth`
+  - `./install-and-run-frontend.sh`
+  - This will take a few minutes to finish installing and to start the frontend server.
+- Wait a few minutes for both the front and backend install scripts to finish.
 
 ### To Install And Run (Normal Way)
 - You must have PostgreSQL running in the background. See https://www.postgresql.org/download/
