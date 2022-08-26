@@ -35,7 +35,7 @@ function writeSeedFile(arrayOfTransDataObj) {
     line += 'user_id: 3' + ")\n";
     seedsStr += line;
   });
-  fs.writeFileSync('./../backend/db/seeds/5_transaction_seed_demo_user.rb',seedsStr);
+  fs.writeFileSync('./../backend/db/seeds/5_transactions.rb',seedsStr);
 }
 
 // 12/03/22 => DateTime.new(2022,12,3,0)

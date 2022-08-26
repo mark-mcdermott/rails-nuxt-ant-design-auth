@@ -1,5 +1,8 @@
 ## Rails gitignore stuff
 
+# Custom node app that generates transaction seed data
+backend/db/seeds/create-transactions/node_modules
+
 backend/*.rbc
 backend/capybara-*.html
 backend/.rspec

@@ -51,6 +51,13 @@ secret_key_base: 961863ec54530ab1739e2744dff87a13369671df612c49f5a552f4a247afdf7
 - Now navigate to `http://localhost:<port>/private-content`. It should look like https://share.cleanshot.com/Cj5tgf
 - Now click Log Out. You should be redirected to the Home page and should be logged out. https://share.cleanshot.com/KIOGB4
 
+## Node App For Creating Transactions Seed Data 
+- There is a custom Node app in `backend/db/seeds/create-transactions`. This generates the seed file `backend/db/seeds/5_transactions.rb`, which runs when you run `rake db:seed:all`
+- If you like the pregenerated transaction seed data, there is no reason to mess with the Transaction Seed App, but if you want to install and run it, do this:
+  - `cd backend/db/seeds/create-transactions`
+  - `npm install`
+  - `node generateTransactionsJson.js`
+
 ### Credit
 This is a modified/updated version of https://medium.com/@fishpercolator/how-to-separate-frontend-backend-with-rails-api-nuxt-js-and-devise-jwt-cf7dd9da9d16 and is not really original content whatsoever. The author of that post, Quinn Daley, did all the hard work. I had to modify it to make it work for me (Rails has gone through some updates since that was written in 2018) and I've spelled out all the steps in a bit more detail. I've also simplified some parts and fleshed out other parts a bit more. Note that the original uses docker, but this version doesn't - it just runs locally.
 
