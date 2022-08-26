@@ -40,7 +40,7 @@ secret_key_base: 961863ec54530ab1739e2744dff87a13369671df612c49f5a552f4a247afdf7
 - In another tab, `cd rails-nuxt-ant-design-auth/frontend && yarn && npm run dev`
 
 ## Getting Started (Let's Poke Around The Site A Bit)
-- Once the frontend is running (listening) in terminal, check the terminal output for the url/port it says it's listening on and go there in your browser. It will be `http://localhost:<port>` but the port is chosen randomly each time. The port will be something like `56377`, but the actual port number will be different for you. In your browser you should see something like https://share.cleanshot.com/YHidal.
+- Once the frontend is running (listening) in terminal, open your browser and go to `http://localhost:8080`. In your browser you should see something like https://share.cleanshot.com/YHidal.
 - In your browser, navigate to `http://localhost:<port>/public-content`. You should see something like https://share.cleanshot.com/3yNlTI.
 - Navigate to `http://localhost:<port>/log-in` - you should see something like https://share.cleanshot.com/9DBPh6. Enter `test@mail.com` for the email and `password` for the password and click Log In. https://share.cleanshot.com/67ManX If you can't login but it's giving you 200 status on the backend when you try, try the db and credential parts above again
 - You should now be redirected to the Home page and should be logged in. It should look like this: https://share.cleanshot.com/IiwLIn
