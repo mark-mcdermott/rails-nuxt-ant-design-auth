@@ -32,7 +32,7 @@ function writeSeedFile(arrayOfTransDataObj) {
     line += 'balance: \'' + trans.balance + '\', ';
     line += 'purchase_type_id: ' + categoryNum + ', ';
     line += 'account_id: ' + acct + ', ';
-    line += 'user_id: 3' + ")\n";
+    line += 'user_id: 1' + ")\n";
     seedsStr += line;
   });
   fs.writeFileSync('./../5_transactions.rb',seedsStr);
