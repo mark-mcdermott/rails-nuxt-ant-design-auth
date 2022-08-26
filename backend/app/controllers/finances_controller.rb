@@ -163,11 +163,14 @@ class FinancesController < ApplicationController
     filled_balances.each do |acct_name, filled_balance_acct|
       daily_balances_arr = []
       counter = 0
-      while counter < filled_balance_acct.length - 1
+      while counter < filled_balance_acct.length
         date = filled_balance_acct[counter]['date']
 
         # get next balance's date
-        next_date = filled_balance_acct[counter + 1]['date']
+        next_date = counter == filled_balance_acct.length-1 ? nil : filled_balance_acct[counter + 1]['date']
+        # next_date = filled_balance_acct[counter + 1]['date']
+
+        # TODO: there is a bug here where the last day's transaction doesnt show in some cases (ie, checking_car)
 
         # while next balance's date is the same as this balance's date, go to next date
         while next_date == date
@@ -210,6 +213,26 @@ class FinancesController < ApplicationController
       monthly_balances[acct_name] = monthly_balances_arr
     end
 
+    # balances by duration
+
+    # 30 day daily balances
+    thirty_day_daily_balances = {}
+    thirty_day_daily_balances_arr = []
+    daily_balances.each do |acct_name, daily_balance_acct|
+      thirty_days_ago = Date.today - 31.days
+      daily_balance_acct.each_with_index do |balance_obj|
+        date = balance_obj['date']
+        # TODO: i don't think this if statement is working right
+        if date > thirty_days_ago
+          thirty_day_daily_balances_arr.push(balance_obj)
+        end
+      end
+      thirty_day_daily_balances[acct_name] = thirty_day_daily_balances_arr
+    end
+    thirty_day_balances = {'thirty_day_daily_balances' => thirty_day_daily_balances}
+
+    balances_by_duration = {'thirty_day_balances' => thirty_day_balances}
+
     # TODO: balances
     #   add 30 days duration (daily/weekly frequency)
     #   add 3 months duration (daily/weekly/bimonthly frequency)
@@ -218,7 +241,7 @@ class FinancesController < ApplicationController
     balances = {'sparse_balances' => sparse_balances, 'filled_balances' => filled_balances,
                 'daily_balances' => daily_balances, 'weekly_balances' => weekly_balances,
                 'bimonthly_balances' => bimonthly_balances, 'monthly_balances' => monthly_balances,
-                'end_balances' => end_balances}
+                'end_balances' => end_balances, 'balances_by_duration' => balances_by_duration}
 
     finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions, 'balances' => balances}
     render json: finances
