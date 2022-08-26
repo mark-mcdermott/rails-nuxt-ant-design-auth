@@ -210,8 +210,10 @@ class FinancesController < ApplicationController
       monthly_balances[acct_name] = monthly_balances_arr
     end
 
-    # TODO: 2) add daily/weekly/bimonthly/monthly balances
-    # TODO: 3) add 30 days, 3 months, all data (each with varying frequencies - daily/weekly/bimonthly/monthly)
+    # TODO: balances
+    #   add 30 days duration (daily/weekly frequency)
+    #   add 3 months duration (daily/weekly/bimonthly frequency)
+    #   add all data duration (daily/weekly/bimonthly/monthly frequency)
 
     balances = {'sparse_balances' => sparse_balances, 'filled_balances' => filled_balances,
                 'daily_balances' => daily_balances, 'weekly_balances' => weekly_balances,
