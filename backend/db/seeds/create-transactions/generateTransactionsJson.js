@@ -35,7 +35,7 @@ function writeSeedFile(arrayOfTransDataObj) {
     line += 'user_id: 3' + ")\n";
     seedsStr += line;
   });
-  fs.writeFileSync('./../backend/db/seeds/5_transactions.rb',seedsStr);
+  fs.writeFileSync('./../5_transactions.rb',seedsStr);
 }
 
 // 12/03/22 => DateTime.new(2022,12,3,0)
@@ -58,8 +58,9 @@ function generateTransactions(transactionType, initBal, acctName) {
   let balanceFormatted;
   let priceNoDollarSign;
   let priceInverted;
+  const numDays = Math.round((new Date() - startDate) / (1000 * 3600 * 24));
 
-  for (let id = 1; id <= 220; id++) {
+  for (let id = 1; id <= numDays; id++) {
     let description;
     let price;
     let balanceStr;
