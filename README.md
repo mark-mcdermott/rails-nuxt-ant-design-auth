@@ -7,7 +7,16 @@ This is a simple placeholder app that demonstrates working signup/login/logout f
 
 ![Install Demo Gif](https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth/blob/main/install-demo.gif)
 
-### To Run 
+### To Install And Run (Simple Way)
+- You must have PostgreSQL running in the background. See https://www.postgresql.org/download/
+- `git clone https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth`
+- `cd rails-nuxt-ant-design-auth`
+- In first terminal tab run:
+- `./install-and-run-backend.sh`
+- Open a second terminal tab and run:
+- `./install-and-run-frontend.sh`
+
+### To Install And Run (Normal Way)
 - You must have PostgreSQL running in the background. See https://www.postgresql.org/download/
 - `git clone https://github.com/mark-mcdermott/rails-nuxt-ant-design-auth`
 - `cd rails-nuxt-ant-design-auth/backend && bundle`
@@ -29,6 +38,8 @@ secret_key_base: 961863ec54530ab1739e2744dff87a13369671df612c49f5a552f4a247afdf7
   - Save the file and close it
 - `rails s`
 - In another tab, `cd rails-nuxt-ant-design-auth/frontend && yarn && npm run dev`
+
+## Getting Started (Let's Poke Around The Site A Bit)
 - Once the frontend is running (listening) in terminal, check the terminal output for the url/port it says it's listening on and go there in your browser. It will be `http://localhost:<port>` but the port is chosen randomly each time. The port will be something like `56377`, but the actual port number will be different for you. In your browser you should see something like https://share.cleanshot.com/YHidal.
 - In your browser, navigate to `http://localhost:<port>/public-content`. You should see something like https://share.cleanshot.com/3yNlTI.
 - Navigate to `http://localhost:<port>/log-in` - you should see something like https://share.cleanshot.com/9DBPh6. Enter `test@mail.com` for the email and `password` for the password and click Log In. https://share.cleanshot.com/67ManX If you can't login but it's giving you 200 status on the backend when you try, try the db and credential parts above again
