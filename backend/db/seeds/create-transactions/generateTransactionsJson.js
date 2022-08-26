@@ -9,12 +9,12 @@ const giftsCheckingInitialBalance = 500;
 const creditCardInitialBalance = 4320.39;
 const budgetCategories = [ 'groceries','auto','web','music','phone','home','daycare','mark','lisa','N/A'];
 
-let checkingFreeCheckingDataObj = generateTransactions('checking', mainCheckingInitialBalance,7);
-let checkingNesteggDataObj = generateTransactions('checking', nesteggCheckingInitialBalance,8);
-let checkingTravelDataObj = generateTransactions('checking', travelCheckingInitialBalance,9);
-let checkingGraphicsCardDataObj = generateTransactions('checking', graphicsCardCheckingInitialBalance,10);
-let checkingGiftsCardDataObj = generateTransactions('checking', giftsCheckingInitialBalance,11);
-let creditDataObj = generateTransactions('credit', creditCardInitialBalance,12);
+let checkingFreeCheckingDataObj = generateTransactions('checking', mainCheckingInitialBalance,1);
+let checkingNesteggDataObj = generateTransactions('checking', nesteggCheckingInitialBalance,2);
+let checkingTravelDataObj = generateTransactions('checking', travelCheckingInitialBalance,3);
+let checkingGraphicsCardDataObj = generateTransactions('checking', graphicsCardCheckingInitialBalance,4);
+let checkingGiftsCardDataObj = generateTransactions('checking', giftsCheckingInitialBalance,5);
+let creditDataObj = generateTransactions('credit', creditCardInitialBalance,6);
 
 writeSeedFile([checkingFreeCheckingDataObj,checkingNesteggDataObj,checkingTravelDataObj,checkingGraphicsCardDataObj,checkingGiftsCardDataObj,creditDataObj]);
 
@@ -24,13 +24,13 @@ function writeSeedFile(arrayOfTransDataObj) {
   allTransactions.forEach((trans,i) => {
     const date = dateStrToRailsDate(trans.date);
     const acct = trans.account;
-    const categoryNum = Math.floor(Math.random() * 9);
+    const categoryNum = Math.floor((Math.random() * 10)+1);
     let line = 'Transaction.create!(';
     line += 'date: ' + date + ', ';
     line += 'description: \'' + trans.description.replace('\'','') + '\', ';
     line += 'amount: \'' + trans.amount + '\', ';
     line += 'balance: \'' + trans.balance + '\', ';
-    line += 'category_id: ' + categoryNum + ', ';
+    line += 'purchase_type_id: ' + categoryNum + ', ';
     line += 'account_id: ' + acct + ', ';
     line += 'user_id: 3' + ")\n";
     seedsStr += line;
