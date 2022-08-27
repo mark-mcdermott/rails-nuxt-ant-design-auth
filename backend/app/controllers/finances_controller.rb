@@ -343,7 +343,6 @@ class FinancesController < ApplicationController
             net_worth_balance = net_worth_hash.values[0].to_f
             if net_worth_date == date
               new_balance = (acct_name != 'credit') ? (net_worth_balance + balance).round() : (net_worth_balance - balance).round()
-              puts balance.to_s + ' + ' + net_worth_balance.to_s + ' = ' + new_balance.to_s
               net_worth_arr[index][net_worth_date.to_s] = new_balance
             end
           end
@@ -352,17 +351,21 @@ class FinancesController < ApplicationController
     end
 
     # bar graph data
-    bar_graph_labels = []
-    bar_graph_data = []
+    bar_graph_labels = [] # dates in yyyy-mm-dd format
+    bar_graph_data = []   # dollar amounts in integer value
     net_worth_arr.each do |net_worth_obj|
-      bar_graph_labels.push(net_worth_obj.keys[0])
+      date_str = net_worth_obj.keys[0]
+      month = Date.strptime(date_str).strftime("%b")
+      bar_graph_labels.push(month)
       bar_graph_data.push(net_worth_obj.values[0])
     end
-    puts bar_graph_labels
-    puts bar_graph_data
+
+    net_worth_graph = {'labels' => bar_graph_labels, 'data' => bar_graph_data}
+
+    graphs = {'net_worth' => net_worth_graph}
 
     finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions,
-                'balances' => balances, 'net_worth' => net_worth_arr}
+                'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs}
     render json: finances
   end 
 

@@ -487,7 +487,94 @@ export default ({
 // ! ||                                     METHODS                                    ||
 // ! ||--------------------------------------------------------------------------------||
 
-  // methods: {
+  methods: {
+    renderBarChart: function(barChartContents) {
+      // this.barChartContents = barChartContents;
+
+      const barChartCtx = this.$refs.barChart.getContext("2d");
+      this.barChart = new Chart(barChartCtx, {
+        type: "bar",
+        data: {
+          // labels: ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+          // labels: this.computedBarChartContents['labels'],
+          labels: barChartContents.labels,
+          datasets: [{
+            label: "Sales",
+            backgroundColor: '#fff',
+            borderWidth: 0,
+            borderSkipped: false,
+            borderRadius: 6,
+            // data: this.computedBarChartContents['data'],
+            data: barChartContents.data,
+            maxBarThickness: 20,
+          },],
+        },
+        options: {
+          layout: {
+            padding: {
+              top: 30,
+              right: 15,
+              left: 10,
+              bottom: 5,
+            },
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+          tooltips: {
+            enabled: true,
+            mode: "index",
+            intersect: false,
+          },
+          scales: {
+            y: {
+              grid: {
+                display: true,
+                color: "rgba(255, 255, 255, .2)",
+                zeroLineColor: "#ffffff",
+                borderDash: [6],
+                borderDashOffset: [6],
+              },
+              ticks: {
+                suggestedMin: 0,
+                suggestedMax: 1000,
+                display: true,
+                color: "#fff",
+                callback: function(value, index, values) {
+                  return '$' + value;
+                },
+                font: {
+                  size: 14,
+                  lineHeight: 1.5,
+                  weight: '600',
+                  family: "Open Sans",
+                },
+              },
+            },
+            x: {
+              grid: {
+                display: false,
+              },
+              ticks: {
+                display: true,
+                color: "#fff",
+                font: {
+                  size: 14,
+                  lineHeight: 1.5,
+                  weight: '600',
+                  family: "Open Sans",
+                },
+              },
+            },
+          },
+        }
+      });
+    },
+  },
 
   //   dashboardClick: function() {
   //     this.pageTitle = 'Dashboard';
@@ -880,14 +967,35 @@ export default ({
       .then(finances => {
         console.log(finances)
 
+        // sidebar
         this.assetAccts = finances.accounts.asset_accounts;
         this.debtAccts = finances.accounts.debt_accounts;
+
+        // widgets
         this.counterWidgetStats[0].value = finances.balances.end_balances.main_checking;
         this.counterWidgetStats[1].value = finances.balances.end_balances.all_checking;
         this.counterWidgetStats[2].value = finances.balances.end_balances.main_credit_card;
         this.counterWidgetStats[3].value = finances.balances.end_balances.nestegg;
 
+        // bar chart
+        let barChartLabels = finances.graphs.net_worth.labels
+        let barChartData = finances.graphs.net_worth.data
+        let barChartContents = { 'labels': barChartLabels, 'data': barChartData }
+        this.renderBarChart(barChartContents);
       });
+
+        // net worth bar chart 
+        // let labels = [];
+        // let data = [];
+        // cashNetWorth.forEach((monthObj) => {
+        //   labels.push(monthObj.month);
+        //   data.push(monthObj.balance);
+        // });
+        // let barChartContents = { 'labels': labels, 'data': data }
+        // this.renderBarChart(barChartContents);
+      
+
+
 
 
           // populate sidebar accounts & line chart
