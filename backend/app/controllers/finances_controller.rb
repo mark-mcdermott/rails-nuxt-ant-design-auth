@@ -168,9 +168,6 @@ class FinancesController < ApplicationController
 
         # get next balance's date
         next_date = counter == filled_balance_acct.length-1 ? nil : filled_balance_acct[counter + 1]['date']
-        # next_date = filled_balance_acct[counter + 1]['date']
-
-        # TODO: there is a bug here where the last day's transaction doesnt show in some cases (ie, checking_car)
 
         # while next balance's date is the same as this balance's date, go to next date
         while next_date == date
@@ -217,21 +214,106 @@ class FinancesController < ApplicationController
 
     # 30 day daily balances
     thirty_day_daily_balances = {}
-    thirty_day_daily_balances_arr = []
     daily_balances.each do |acct_name, daily_balance_acct|
-      thirty_days_ago = Date.today - 31.days
+      thirty_day_daily_balances_arr = []
+      thirty_days_ago = Date.today - 30.days
       daily_balance_acct.each_with_index do |balance_obj|
         date = balance_obj['date']
-        # TODO: i don't think this if statement is working right
         if date > thirty_days_ago
           thirty_day_daily_balances_arr.push(balance_obj)
         end
       end
       thirty_day_daily_balances[acct_name] = thirty_day_daily_balances_arr
     end
-    thirty_day_balances = {'thirty_day_daily_balances' => thirty_day_daily_balances}
 
-    balances_by_duration = {'thirty_day_balances' => thirty_day_balances}
+    # 30 day weekly, 3 month daily/weekly/bimonthly
+    thirty_day_weekly_balances = {}
+    three_month_daily_balances = {}
+    three_month_weekly_balances = {}
+    three_month_bimonthly_balances = {}
+
+    one_year_daily_balances = {}
+    one_year_weekly_balances = {}
+    one_year_bimonthly_balances = {}
+    one_year_monthly_balances = {}
+
+    daily_balances.each do |acct_name, daily_balance_acct|
+      thirty_day_weekly_balances_arr = []
+      three_month_daily_balances_arr = []
+      three_month_weekly_balances_arr = []
+      three_month_bimonthly_balances_arr = []
+      one_year_daily_balances_arr = []
+      one_year_weekly_balances_arr = []
+      one_year_bimonthly_balances_arr = []
+      one_year_monthly_balances_arr = []
+      thirty_days_ago = Date.today - 30.days
+      three_months_ago = Date.today - 90.days
+      one_year_ago = Date.today - 365.days
+      daily_balance_acct.each_with_index do |balance_obj|
+        date = balance_obj['date']
+        day = date.strftime("%d").to_i
+        day_minus_1 = day - 1
+
+        if date > thirty_days_ago
+          if day_minus_1 % 7 == 0
+            thirty_day_weekly_balances_arr.push(balance_obj)
+          end
+        end
+
+        if date > three_months_ago
+          three_month_daily_balances_arr.push(balance_obj)
+          day_minus_1 = day - 1
+          if day_minus_1 % 7 == 0
+            three_month_weekly_balances_arr.push(balance_obj)
+          end
+          if day == 1 or day == 15
+            three_month_bimonthly_balances_arr.push(balance_obj)
+          end
+        end
+
+        if date > one_year_ago
+          one_year_daily_balances_arr.push(balance_obj)
+          day_minus_1 = day - 1
+          if day_minus_1 % 7 == 0
+            one_year_weekly_balances_arr.push(balance_obj)
+          end
+          if day == 1
+            one_year_bimonthly_balances_arr.push(balance_obj)
+            one_year_monthly_balances_arr.push(balance_obj)
+          end
+          if day == 15
+            one_year_bimonthly_balances_arr.push(balance_obj)
+          end
+        end
+
+      end
+      thirty_day_weekly_balances[acct_name] = thirty_day_weekly_balances_arr
+      three_month_daily_balances[acct_name] = three_month_daily_balances_arr
+      three_month_weekly_balances[acct_name] = three_month_weekly_balances_arr
+      three_month_bimonthly_balances[acct_name] = three_month_bimonthly_balances_arr
+
+      one_year_daily_balances[acct_name] = one_year_daily_balances_arr
+      one_year_weekly_balances[acct_name] = one_year_weekly_balances_arr
+      one_year_bimonthly_balances[acct_name] = one_year_bimonthly_balances_arr
+      one_year_monthly_balances[acct_name] = one_year_monthly_balances_arr
+
+    end
+
+    thirty_day_balances = {'thirty_day_daily_balances' => thirty_day_daily_balances,
+                           'thirty_day_weekly_balances' => thirty_day_weekly_balances}
+
+    three_month_balances = {'three_month_daily_balances' => three_month_daily_balances,
+                           'three_month_weekly_balances' => three_month_weekly_balances,
+                           'three_month_bimonthly_balances' => three_month_bimonthly_balances}
+
+    one_year_balances = {'one_year_daily_balances' => one_year_daily_balances,
+                         'one_year_weekly_balances' => one_year_weekly_balances,
+                         'one_year_bimonthly_balances' => one_year_bimonthly_balances,
+                         'one_year_monthly_balances' => one_year_monthly_balances}
+
+    balances_by_duration = {'thirty_day_balances' => thirty_day_balances,
+                            'three_month_balances' => three_month_balances,
+                            'one_year_balances' => one_year_balances}
 
     # TODO: balances
     #   add 30 days duration (daily/weekly frequency)
