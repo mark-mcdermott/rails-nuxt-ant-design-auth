@@ -14,7 +14,7 @@ class FinancesController < ApplicationController
     sum = 0
     end_balances.each do |end_balance_acct|
       this_end_balance = end_balance_acct[1]
-      sum += Monetize.parse(this_end_balance)
+      sum += Monetize.parse(this_end_balance) # TODO: THIS IS PROBABLY AN ERROR - SHOULD PROBABLY BE sum += Monetize.parse(this_end_balance * 100)
     end
     money_obj = Money.new(sum)
     helpers.humanized_money_with_symbol money_obj
@@ -315,17 +315,54 @@ class FinancesController < ApplicationController
                             'three_month_balances' => three_month_balances,
                             'one_year_balances' => one_year_balances}
 
-    # TODO: balances
-    #   add 30 days duration (daily/weekly frequency)
-    #   add 3 months duration (daily/weekly/bimonthly frequency)
-    #   add all data duration (daily/weekly/bimonthly/monthly frequency)
-
     balances = {'sparse_balances' => sparse_balances, 'filled_balances' => filled_balances,
                 'daily_balances' => daily_balances, 'weekly_balances' => weekly_balances,
                 'bimonthly_balances' => bimonthly_balances, 'monthly_balances' => monthly_balances,
                 'end_balances' => end_balances, 'balances_by_duration' => balances_by_duration}
 
-    finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions, 'balances' => balances}
+    # net worth
+    net_worth_arr = []
+    today = Date.today
+    nine_months_ago = Date.today - (30 * 9).days
+    (nine_months_ago..today).each do |date|
+      day = date.strftime("%d").to_i
+      if day == 1
+        net_worth_arr.push({date.to_s => 0})
+      end
+    end
+
+    counter = 0
+    monthly_balances.each do |acct_name, monthly_balance_acct|
+      counter += 1
+      monthly_balance_acct.each do |balance_obj|
+        date = Date.strptime(balance_obj['date'].to_s)
+        balance = Monetize.parse(balance_obj['balance']).to_f
+        if date > nine_months_ago
+          net_worth_arr.each_with_index do |net_worth_hash,index|
+            net_worth_date = Date.strptime(net_worth_hash.keys[0])
+            net_worth_balance = net_worth_hash.values[0].to_f
+            if net_worth_date == date
+              new_balance = (acct_name != 'credit') ? (net_worth_balance + balance).round() : (net_worth_balance - balance).round()
+              puts balance.to_s + ' + ' + net_worth_balance.to_s + ' = ' + new_balance.to_s
+              net_worth_arr[index][net_worth_date.to_s] = new_balance
+            end
+          end
+        end
+      end
+    end
+
+    # bar graph data
+    bar_graph_labels = []
+    bar_graph_data = []
+    net_worth_arr.each do |net_worth_obj|
+      bar_graph_labels.push(net_worth_obj.keys[0])
+      bar_graph_data.push(net_worth_obj.values[0])
+    end
+    puts bar_graph_labels
+    puts bar_graph_data
+
+    finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions,
+                'balances' => balances, 'net_worth' => net_worth_arr}
     render json: finances
   end 
 
