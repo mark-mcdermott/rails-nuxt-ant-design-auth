@@ -385,34 +385,38 @@ class FinancesController < ApplicationController
     end
     net_worth_graph = {'labels' => bar_graph_labels, 'data' => bar_graph_data}
 
+    graphs = {'net_worth' => net_worth_graph}
+
     # line graph data
-    checking_title = 'Main Checking'
-    checking_labels = []
-    checking_data = []
-    checking_monthly_bals = monthly_balances['checking_free_checking']
-    checking_monthly_bals.each do |bal_obj|
-      date_obj = bal_obj['date']
-      date_mm_yy_str = date_obj.strftime("%-m/%y") # ie, 7/22
-      checking_labels.push(date_mm_yy_str)
-      checking_data.push(num(bal_obj['balance']).round())
+    monthly_balances.each do |acct_name, daily_balance_acct|
+      title = acct_name.titleize
+      labels = []
+      data = []
+      daily_balance_acct.each do |bal_obj|
+        labels.push(bal_obj['date'].strftime("%-m/%y")) # ie, 7/22
+        data.push(num(bal_obj['balance']).round())
+      end
+      line_graph_this_acct = {'title' => title, 'labels' => labels, 'data' => data}
+      this_acct_symbol = acct_name.to_sym
+      graphs[this_acct_symbol] = line_graph_this_acct
     end
-    line_graph_checking = {'title' => checking_title, 'labels' => checking_labels, 'data' => checking_data}
+    graphs[:checking_and_credit] = [graphs[:checking_free_checking], graphs[:credit]]
 
-    credit_title = 'Credit Card'
-    credit_labels = []
-    credit_data = []
-    credit_monthly_bals = monthly_balances['credit']
-    credit_monthly_bals.each do |bal_obj|
-      date_obj = bal_obj['date']
-      date_mm_yy_str = date_obj.strftime("%-m/%y") # ie, 7/22
-      credit_labels.push(date_mm_yy_str)
-      credit_data.push(num(bal_obj['balance']).round())
-    end
-    line_graph_credit = {'title' => credit_title, 'labels' => credit_labels, 'data' => credit_data}
+    # credit_title = 'Credit Card'
+    # credit_labels = []
+    # credit_data = []
+    # credit_monthly_bals = monthly_balances['credit']
+    # credit_monthly_bals.each do |bal_obj|
+    #   date_obj = bal_obj['date']
+    #   date_mm_yy_str = date_obj.strftime("%-m/%y") # ie, 7/22
+    #   credit_labels.push(date_mm_yy_str)
+    #   credit_data.push(num(bal_obj['balance']).round())
+    # end
+    # line_graph_credit = {'title' => credit_title, 'labels' => credit_labels, 'data' => credit_data}
 
-    line_graph = [line_graph_checking, line_graph_credit]
+    # line_graph = [line_graph_checking, line_graph_credit]
 
-    graphs = {'net_worth' => net_worth_graph, 'checking_and_credit' => line_graph}
+    # graphs = {'net_worth' => net_worth_graph, 'checking_and_credit' => line_graph}
 
     finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions,
                 'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs}

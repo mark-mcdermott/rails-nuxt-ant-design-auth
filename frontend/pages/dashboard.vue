@@ -491,15 +491,20 @@ export default ({
 
     dashboardClick: function() {
       this.pageTitle = 'Dashboard';
-  //     this.lineChartTitle = 'Main Checking & Credit Card';
+      this.lineChartTitle = 'Main Checking & Credit Card';
   //     this.showLineChartLegend = true;
   //     this.showWidgets = true;
       this.showBarChart = true;
   //     this.showTable = false;
       this.lineChartCols = 14;
+      let graphContents = this.finances.graphs.checking_and_credit;
+      this.lineChart.destroy();
+      this.renderLineChart(graphContents);
     },
 
     accountClick: function(acctId,name) {
+      let acctSlug = name.replace(/\s+/g, '_').toLowerCase();
+      let graph = this.finances.graphs[acctSlug];
 
       this.pageTitle = name;
       this.showBarChart = false;
@@ -507,7 +512,8 @@ export default ({
       this.lineChartCols = 24;
 
       this.lineChart.destroy();
-      // this.renderLineChart([{ title: lineChartTitle, labels: lineChartLabels, data: lineChartData }]);
+      this.lineChartTitle = name;
+      this.renderLineChart([{ title: graph.title, labels: graph.labels, data: graph.data }]);
 
     },
 
@@ -598,7 +604,8 @@ export default ({
     },
 
     renderLineChart: function(chartContent) {
-      // this.lineChartContents = chartContent;
+      this.lineChartContents = chartContent;
+      // console.log(chartContents)
 
       const options = {
         tension: 0.4,
@@ -614,10 +621,10 @@ export default ({
         chartContent.forEach((content, index) => {
 
           let thisDataSet = {
-            // data: this.computedLineChartContents[index]['data'],
-            // label: this.computedLineChartContents[index]['title'],
-            data: content.data,
-            label: content.title,
+            data: this.computedLineChartContents[index]['data'],
+            label: this.computedLineChartContents[index]['title'],
+            // data: content.data,
+            // label: content.title,
             tension: options.tension,
             borderWidth: options.borderWidth,
             pointRadius: options.pointRadius,
@@ -629,7 +636,8 @@ export default ({
           dataSets.push(thisDataSet);
 
         })
-        if (dataSets.length == 2) { 
+        if (dataSets.length == chartContent.length) { 
+        // if (dataSets.length == 2) { 
         // if (dataSets.length == 1) { 
           resolve() 
         }
@@ -639,8 +647,8 @@ export default ({
         // new Chart(lineChartCtx, {
             type: "line",
             data: {
-              // labels: this.computedLineChartContents[0]['labels'],
-              labels: chartContent[1]['labels'],
+              labels: this.computedLineChartContents[0]['labels'],
+              // labels: chartContent[1]['labels'],
               datasets: dataSets
             },
             options: {
@@ -907,7 +915,7 @@ export default ({
 
   computed: {
 
-    /*computedLineChartContents : {
+    computedLineChartContents : {
       get() {
         return this.lineChartContents;
       },
@@ -916,7 +924,7 @@ export default ({
       }
     },
 
-    computedBarChartContents : {
+    /*computedBarChartContents : {
       get() {
         return this.barChartContents;
       },
