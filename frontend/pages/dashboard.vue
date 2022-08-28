@@ -495,7 +495,6 @@ export default ({
       this.barChart = new Chart(barChartCtx, {
         type: "bar",
         data: {
-          // labels: ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
           // labels: this.computedBarChartContents['labels'],
           labels: barChartContents.labels,
           datasets: [{
@@ -545,7 +544,7 @@ export default ({
                 display: true,
                 color: "#fff",
                 callback: function(value, index, values) {
-                  return '$' + value;
+                  return '$' + value.toLocaleString("en-US");
                 },
                 font: {
                   size: 14,
@@ -982,6 +981,13 @@ export default ({
         let barChartData = finances.graphs.net_worth.data
         let barChartContents = { 'labels': barChartLabels, 'data': barChartData }
         this.renderBarChart(barChartContents);
+
+        // assets
+        this.otherAssets.stock = finances.assets[3].dollar_amt_k
+        this.otherAssets.retirement = finances.assets[0].dollar_amt_k
+        this.otherAssets.house = finances.assets[2].dollar_amt_k
+        this.otherAssets.cars = finances.assets[1].dollar_amt_k
+
       });
 
         // net worth bar chart 

@@ -2,6 +2,10 @@ require 'money-rails'
 
 class FinancesController < ApplicationController
 
+  def dollar_amt(num)
+    ActiveSupport::NumberHelper.number_to_currency(num, precision: 0)
+  end
+
   # takes in string like '$35,349.32' and returns $35,349
   def round_cur_str(str)
     rounded_float = Money.new(Monetize.parse(str)).to_f.round
@@ -52,7 +56,18 @@ class FinancesController < ApplicationController
     accounts = {'all_accounts' => all_accounts, 'asset_accounts' => asset_accounts, 'debt_accounts' => debt_accounts}
 
     # assets
-    assets = Asset.where(user_id: user)
+    assets = []
+    assets_active_record_arr = Asset.where(user_id: user)
+    assets_active_record_arr.each do |asset_active_record|
+      asset_hash = asset_active_record.as_json
+      value = asset_hash['value']
+      dollar_str = dollar_amt(value)
+      dollar_str_k = dollar_str
+      dollar_str_k[-4..-1] = 'k'
+      asset_hash[:dollar_amt] = dollar_str
+      asset_hash[:dollar_amt_k] = dollar_str_k
+      assets.push(asset_hash)
+    end
 
     # budgets
     budgets = []
@@ -355,10 +370,16 @@ class FinancesController < ApplicationController
     bar_graph_data = []   # dollar amounts in integer value
     net_worth_arr.each do |net_worth_obj|
       date_str = net_worth_obj.keys[0]
-      month = Date.strptime(date_str).strftime("%b")
+      month = Date.strptime(date_str).strftime("%b") # ie, "Feb"
       bar_graph_labels.push(month)
-      bar_graph_data.push(net_worth_obj.values[0])
+      net_worth = net_worth_obj.values[0]
+      bar_graph_data.push(net_worth)
     end
+
+    # assets.each do |asset|
+    #   value = asset['value']
+    #   asset['dollar_amt'] = dollar_amt(value)
+    # end
 
     net_worth_graph = {'labels' => bar_graph_labels, 'data' => bar_graph_data}
 
