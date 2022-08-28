@@ -115,8 +115,10 @@ class FinancesController < ApplicationController
     account_transactions.each do |acct_name, transactions_accounts|
       transactions_table_arr = []
       transactions_accounts.each do |trans|
-        transactions_obj = {'key'=>trans.id,'date'=>trans.date,'description'=>trans.description,'amount'=>trans.amount,
-                            'balance'=>trans.balance}
+        # date_and_time = trans.date.strftime("%D %I:%M %p")
+        date = trans.date.strftime("%D")
+        transactions_obj = {'key'=>trans.id,'date'=>date,'description'=>trans.description,
+                            'amount'=>trans.amount, 'balance'=>trans.balance}
         transactions_table_arr.push(transactions_obj)
       end
       transactions_tables[acct_name] = transactions_table_arr

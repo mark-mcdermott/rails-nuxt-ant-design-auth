@@ -262,7 +262,7 @@
                       </a-col> -->
                     </a-row>
                   </template>
-                  <a-table :columns="tableColumns" :data-source="tableData" :pagination="false">
+                  <a-table :columns="tableColumns" :data-source="tableData" :pagination="true">
 
                     <!--
                     <a-space slot="members" slot-scope="members" :size="-12" class="avatar-chips">
@@ -519,7 +519,6 @@ export default ({
       this.lineChartTitle = name;
       this.renderLineChart([{ title: graph.title, labels: graph.labels, data: graph.data }]);
       this.tableData = this.finances.transactions.transactions_tables[acctSlug]
-      console.log(this.finances.transactions.account_transactions[acctSlug])
     },
 
     renderBarChart: function(barChartContents) {
