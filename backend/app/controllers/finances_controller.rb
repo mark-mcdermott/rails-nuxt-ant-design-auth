@@ -109,7 +109,21 @@ class FinancesController < ApplicationController
       these_transactions = User.select('transactions.id,transactions.account_id,transactions.date,transactions.description,transactions.purchase_type_id,transactions.amount,transactions.balance').joins(:transactions).where(id: user).where(:transactions => {:account_id => account['id']})
       account_transactions[acct_name] = these_transactions
     end
-    transactions = {'all_transactions' => all_transactions, 'account_transactions' => account_transactions}
+
+    # transactions tables
+    transactions_tables = {}
+    account_transactions.each do |acct_name, transactions_accounts|
+      transactions_table_arr = []
+      transactions_accounts.each do |trans|
+        transactions_obj = {'key'=>trans.id,'date'=>trans.date,'description'=>trans.description,'amount'=>trans.amount,
+                            'balance'=>trans.balance}
+        transactions_table_arr.push(transactions_obj)
+      end
+      transactions_tables[acct_name] = transactions_table_arr
+    end
+
+    transactions = {'all_transactions' => all_transactions, 'account_transactions' => account_transactions,
+                    'transactions_tables' => transactions_tables}
 
     # balances
     # "sparse balances" are straight from the transactions list - it can skip days and there can be multiple balances on one day

@@ -456,6 +456,7 @@ export default ({
         {
           title: 'DATE',
           dataIndex: 'date',
+          key: 'date',
           width: 125
           // scopedSlots: { customRender: 'company' },
           // width: 300,
@@ -463,18 +464,21 @@ export default ({
         {
           title: 'DESCRIPTION',
           dataIndex: 'description',
+          key: 'description'
           // scopedSlots: { customRender: 'members' },
         },
         {
           title: 'AMOUNT',
           dataIndex: 'amount',
-          width: 125
+          key: 'amount',
+          width: 125,
           // class: 'font-bold text-muted text-sm',
         },
         {
           title: 'BALANCE',
           // scopedSlots: { customRender: 'completion' },
           dataIndex: 'balance',
+          key: 'balance',
           width: 125
         },
       ],
@@ -492,10 +496,10 @@ export default ({
     dashboardClick: function() {
       this.pageTitle = 'Dashboard';
       this.lineChartTitle = 'Main Checking & Credit Card';
-  //     this.showLineChartLegend = true;
-  //     this.showWidgets = true;
+      this.showLineChartLegend = true;
+      this.showWidgets = true;
       this.showBarChart = true;
-  //     this.showTable = false;
+      this.showTable = false;
       this.lineChartCols = 14;
       let graphContents = this.finances.graphs.checking_and_credit;
       this.lineChart.destroy();
@@ -505,16 +509,17 @@ export default ({
     accountClick: function(acctId,name) {
       let acctSlug = name.replace(/\s+/g, '_').toLowerCase();
       let graph = this.finances.graphs[acctSlug];
-
       this.pageTitle = name;
+      this.showWidgets = false;
       this.showBarChart = false;
-      // this.showTable = true;
+      this.showTable = true;
+      this.showLineChartLegend = false;
       this.lineChartCols = 24;
-
       this.lineChart.destroy();
       this.lineChartTitle = name;
       this.renderLineChart([{ title: graph.title, labels: graph.labels, data: graph.data }]);
-
+      this.tableData = this.finances.transactions.transactions_tables[acctSlug]
+      console.log(this.finances.transactions.account_transactions[acctSlug])
     },
 
     renderBarChart: function(barChartContents) {
@@ -637,8 +642,6 @@ export default ({
 
         })
         if (dataSets.length == chartContent.length) { 
-        // if (dataSets.length == 2) { 
-        // if (dataSets.length == 1) { 
           resolve() 
         }
       }).then(() => {
@@ -913,8 +916,11 @@ export default ({
 
   // },
 
-  computed: {
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                    COMPUTED                                    ||
+// ! ||--------------------------------------------------------------------------------||
 
+  computed: {
     computedLineChartContents : {
       get() {
         return this.lineChartContents;
@@ -923,16 +929,6 @@ export default ({
         this.lineChartContents = arr
       }
     },
-
-    /*computedBarChartContents : {
-      get() {
-        return this.barChartContents;
-      },
-      set(obj) {
-        this.barChartContents = obj
-      }
-    },*/
-
     // Sets layout's element's class based on route's meta data.
     layoutClass() {
       return this.$route.meta.layoutClass;
@@ -992,6 +988,53 @@ export default ({
         let lineChartCreditContent = {title: lineChartCreditTitle, labels: lineChartCreditLabels, data: lineChartCreditData};
         let lineChartContent = [lineChartCheckingContent, lineChartCreditContent];
         this.renderLineChart(lineChartContent);
+
+        // table
+        // this.tableData = finances.transactions.transactions_tables[]
+        // this.tableData = [
+        //   {
+        //     key: '1',
+        //     date: '2/7/22',
+        //     description: 'description',
+        //     amount: '$4.72',
+        //     balance: '$14,000',
+        //   },
+        //   {
+        //     key: '2',
+        //     date: '2/7/22',
+        //     description: 'description',
+        //     amount: '$4.72',
+        //     balance: '$14,000',
+        //   },
+        //   {
+        //     key: '3',
+        //     date: '2/7/22',
+        //     description: 'description',
+        //     amount: '$4.72',
+        //     balance: '$14,000',
+        //   },
+        //   {
+        //     key: '4',
+        //     date: '2/7/22',
+        //     description: 'description',
+        //     amount: '$4.72',
+        //     balance: '$14,000',
+        //   },
+        //   {
+        //     key: '5',
+        //     date: '2/7/22',
+        //     description: 'description',
+        //     amount: '$4.72',
+        //     balance: '$14,000',
+        //   },
+        //   {
+        //     key: '6',
+        //     date: '2/7/22',
+        //     description: 'description',
+        //     amount: '$4.72',
+        //     balance: '$14,000',
+        //   },
+        // ];
 
       });
 
