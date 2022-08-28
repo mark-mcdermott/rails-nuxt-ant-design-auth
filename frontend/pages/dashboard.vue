@@ -60,7 +60,7 @@
             Debt Accounts
           </a-menu-item>
           <a-menu-item v-for="(debtAcct,i) in debtAccts" :key="i">
-            <a @click.prevent="accountClick(assetAcct.id,assetAcct.name)">
+            <a @click.prevent="accountClick(debtAcct.id,debtAcct.name)">
               <span class="icon">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 4C2.89543 4 2 4.89543 2 6V7H18V6C18 4.89543 17.1046 4 16 4H4Z" fill="#111827"/>
@@ -488,6 +488,29 @@ export default ({
 // ! ||--------------------------------------------------------------------------------||
 
   methods: {
+
+    dashboardClick: function() {
+      this.pageTitle = 'Dashboard';
+  //     this.lineChartTitle = 'Main Checking & Credit Card';
+  //     this.showLineChartLegend = true;
+  //     this.showWidgets = true;
+      this.showBarChart = true;
+  //     this.showTable = false;
+      this.lineChartCols = 14;
+    },
+
+    accountClick: function(acctId,name) {
+
+      this.pageTitle = name;
+      this.showBarChart = false;
+      // this.showTable = true;
+      this.lineChartCols = 24;
+
+      this.lineChart.destroy();
+      // this.renderLineChart([{ title: lineChartTitle, labels: lineChartLabels, data: lineChartData }]);
+
+    },
+
     renderBarChart: function(barChartContents) {
       // this.barChartContents = barChartContents;
 
@@ -612,8 +635,8 @@ export default ({
         }
       }).then(() => {
         const lineChartCtx = this.$refs.lineChart.getContext("2d");
-        // this.lineChart = new Chart(lineChartCtx, {
-        new Chart(lineChartCtx, {
+        this.lineChart = new Chart(lineChartCtx, {
+        // new Chart(lineChartCtx, {
             type: "line",
             data: {
               // labels: this.computedLineChartContents[0]['labels'],
@@ -776,51 +799,6 @@ export default ({
 
     },*/
 
-    /*accountClick: function(acctId,name) {
-      
-      this.pageTitle = name;
-      this.lineChartTitle = name,
-      this.showLineChartLegend = false; 
-      this.showWidgets = false;
-      this.showBarChart = false;
-      this.showTable = true;
-      this.lineChartCols = 24;
-
-      const userId = this.$auth.user.id;
-      const transactionsApi = 'transactions/account/' + acctId + '/' + userId
-      this.$axios.$get(transactionsApi)
-        .then((transactionsData) => {
-          
-          
-            const dataClean = transactionsData.map((row)=>{ 
-              const date = row.date;
-              const description = row.description;
-              const amount = row.amount;  
-              const balance = row.balance;
-              return {date, description, amount, balance};
-            });  
-            const sparseBalances = transactionsToSparseBalances(dataClean);
-            const filledBalances = sparseBalancesToFilledBalances(sparseBalances);
-            const balances = filledBalances.map(row => { return row.balance.replace('$','').replace(',',''); });
-            const filledDates = filledBalances.map(row => { return row.date; });
-            const lineChartTitle = 'Mobile Apps';
-            const lineChartLabels = filledDates;
-            const lineChartData = balances;
-            
-              this.lineChart.destroy();
-              this.renderLineChart([{ title: lineChartTitle, labels: lineChartLabels, data: lineChartData }]);
-
-              this.tableData = dataClean.map((row, index)=>{ 
-                const key = index;
-                const date = friendlyDate(row.date);
-                const description = row.description;
-                const amount = row.amount;  
-                const balance = row.balance;
-                return {key, date, description, amount, balance};
-              });
-        })
-    },*/
-
     /*toggleSidebar( value ) {
       this.sidebarCollapsed = value ;
     },
@@ -971,6 +949,7 @@ export default ({
     this.$axios.$get(financesApi)
       .then(finances => {
         console.log(finances)
+        this.finances = finances;
 
         // sidebar
         this.assetAccts = finances.accounts.asset_accounts;

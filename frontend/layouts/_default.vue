@@ -61,7 +61,8 @@ export default {
   justify-content: space-between;
 } 
 .ant-page-header-heading {
-  width: inherit;
+  /* width: inherit; */
+  overflow: visible;
 }
 .ant-page-header-heading-title a {
   color: rgba(0, 0, 0, 0.85);
