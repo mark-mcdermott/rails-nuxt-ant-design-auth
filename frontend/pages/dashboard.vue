@@ -606,8 +606,8 @@ export default ({
           dataSets.push(thisDataSet);
 
         })
-        // if (dataSets.length == 2) { 
-        if (dataSets.length == 1) { 
+        if (dataSets.length == 2) { 
+        // if (dataSets.length == 1) { 
           resolve() 
         }
       }).then(() => {
@@ -617,7 +617,7 @@ export default ({
             type: "line",
             data: {
               // labels: this.computedLineChartContents[0]['labels'],
-              labels: chartContent[0]['labels'],
+              labels: chartContent[1]['labels'],
               datasets: dataSets
             },
             options: {
@@ -995,10 +995,15 @@ export default ({
         this.otherAssets.cars = finances.assets[1].dollar_amt_k
 
         // line chart 
-        let lineChartAssetsLabels = ['1/1/22','2/1/22','3/1/22','4/1/22','5/1/22','6/1/22','7/1/22','8/1/22','9/1/22','10/1/22'];
-        let lineChartAssetsData = [1,8,3,1,6,10,3,5,10];
-        let lineChartAssetsContent = {title: 'Assets', labels: lineChartAssetsLabels, data: lineChartAssetsData};
-        let lineChartContent = [lineChartAssetsContent];
+        let lineChartCheckingTitle = finances.graphs.checking_and_credit[0].title;
+        let lineChartCheckingLabels = finances.graphs.checking_and_credit[0].labels;
+        let lineChartCheckingData = finances.graphs.checking_and_credit[0].data;
+        let lineChartCheckingContent = {title: lineChartCheckingTitle, labels: lineChartCheckingLabels, data: lineChartCheckingData};
+        let lineChartCreditTitle = finances.graphs.checking_and_credit[1].title;
+        let lineChartCreditLabels = finances.graphs.checking_and_credit[1].labels;
+        let lineChartCreditData = finances.graphs.checking_and_credit[1].data;
+        let lineChartCreditContent = {title: lineChartCreditTitle, labels: lineChartCreditLabels, data: lineChartCreditData};
+        let lineChartContent = [lineChartCheckingContent, lineChartCreditContent];
         this.renderLineChart(lineChartContent);
 
       });

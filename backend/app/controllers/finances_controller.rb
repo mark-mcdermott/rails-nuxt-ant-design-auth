@@ -6,6 +6,14 @@ class FinancesController < ApplicationController
     ActiveSupport::NumberHelper.number_to_currency(num, precision: 0)
   end
 
+  def num(dollar_amt)
+    if dollar_amt.include? '.'
+      dollar_amt.gsub(/[^\d\.]/, '').to_f
+    else
+      dollar_amt.gsub(/\D/,'').to_i
+    end
+  end
+
   # takes in string like '$35,349.32' and returns $35,349
   def round_cur_str(str)
     rounded_float = Money.new(Monetize.parse(str)).to_f.round
@@ -375,10 +383,36 @@ class FinancesController < ApplicationController
       net_worth = net_worth_obj.values[0]
       bar_graph_data.push(net_worth)
     end
-
     net_worth_graph = {'labels' => bar_graph_labels, 'data' => bar_graph_data}
 
-    graphs = {'net_worth' => net_worth_graph}
+    # line graph data
+    checking_title = 'Main Checking'
+    checking_labels = []
+    checking_data = []
+    checking_monthly_bals = monthly_balances['checking_free_checking']
+    checking_monthly_bals.each do |bal_obj|
+      date_obj = bal_obj['date']
+      date_mm_yy_str = date_obj.strftime("%-m/%y") # ie, 7/22
+      checking_labels.push(date_mm_yy_str)
+      checking_data.push(num(bal_obj['balance']).round())
+    end
+    line_graph_checking = {'title' => checking_title, 'labels' => checking_labels, 'data' => checking_data}
+
+    credit_title = 'Credit Card'
+    credit_labels = []
+    credit_data = []
+    credit_monthly_bals = monthly_balances['credit']
+    credit_monthly_bals.each do |bal_obj|
+      date_obj = bal_obj['date']
+      date_mm_yy_str = date_obj.strftime("%-m/%y") # ie, 7/22
+      credit_labels.push(date_mm_yy_str)
+      credit_data.push(num(bal_obj['balance']).round())
+    end
+    line_graph_credit = {'title' => credit_title, 'labels' => credit_labels, 'data' => credit_data}
+
+    line_graph = [line_graph_checking, line_graph_credit]
+
+    graphs = {'net_worth' => net_worth_graph, 'checking_and_credit' => line_graph}
 
     finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions,
                 'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs}
