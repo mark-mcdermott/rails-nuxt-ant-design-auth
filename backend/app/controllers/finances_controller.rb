@@ -376,11 +376,6 @@ class FinancesController < ApplicationController
       bar_graph_data.push(net_worth)
     end
 
-    # assets.each do |asset|
-    #   value = asset['value']
-    #   asset['dollar_amt'] = dollar_amt(value)
-    # end
-
     net_worth_graph = {'labels' => bar_graph_labels, 'data' => bar_graph_data}
 
     graphs = {'net_worth' => net_worth_graph}

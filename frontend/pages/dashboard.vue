@@ -573,6 +573,121 @@ export default ({
         }
       });
     },
+
+    renderLineChart: function(chartContent) {
+      // this.lineChartContents = chartContent;
+
+      const options = {
+        tension: 0.4,
+        borderWidth: 0,
+        pointRadius: 0,
+        borderWidth: 3,
+        maxBarThickness: 6,
+        borderColor: ['#1890FF', '#B37FEB']
+      }
+
+      let dataSets = [];
+      new Promise((resolve) => {
+        chartContent.forEach((content, index) => {
+
+          let thisDataSet = {
+            // data: this.computedLineChartContents[index]['data'],
+            // label: this.computedLineChartContents[index]['title'],
+            data: content.data,
+            label: content.title,
+            tension: options.tension,
+            borderWidth: options.borderWidth,
+            pointRadius: options.pointRadius,
+            borderColor: options.borderColor[index],
+            borderWidth: options.borderWidth,
+            maxBarThickness: options.maxBarThickness
+          }
+
+          dataSets.push(thisDataSet);
+
+        })
+        // if (dataSets.length == 2) { 
+        if (dataSets.length == 1) { 
+          resolve() 
+        }
+      }).then(() => {
+        const lineChartCtx = this.$refs.lineChart.getContext("2d");
+        // this.lineChart = new Chart(lineChartCtx, {
+        new Chart(lineChartCtx, {
+            type: "line",
+            data: {
+              // labels: this.computedLineChartContents[0]['labels'],
+              labels: chartContent[0]['labels'],
+              datasets: dataSets
+            },
+            options: {
+              layout: {
+                padding: {
+                  top: 30,
+                  right: 15,
+                  left: 10,
+                  bottom: 5,
+                },
+              },
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: {
+                  display: false,
+                },
+              },
+              tooltips: {
+                enabled: true,
+                mode: "index",
+                intersect: false,
+              },
+              scales: {
+                y: {
+                  grid: {
+                    display: true,
+                    color: "rgba(0, 0, 0, .2)",
+                    zeroLineColor: "#000000",
+                    borderDash: [6],
+                    borderDashOffset: [6],
+                  },
+                  ticks: {
+                    suggestedMin: 0,
+                    suggestedMax: 1000,
+                    display: true,
+                    color: "#8C8C8C",
+                    callback: function(value) {
+                      return toCurrency(value);
+                    },
+                    font: {
+                      size: 14,
+                      lineHeight: 1.8,
+                      weight: '600',
+                      family: "Open Sans",
+                    },
+                  },
+                },
+                x: {
+                  grid: {
+                    display: false,
+                  },
+                  ticks: {
+                    display: true,
+                    color: "#8C8C8C",
+                    font: {
+                      size: 14,
+                      lineHeight: 1.5,
+                      weight: '600',
+                      family: "Open Sans",
+                    },
+                  },
+                },
+              },
+            }
+          });
+      })
+
+    }
+
   },
 
   //   dashboardClick: function() {
@@ -810,116 +925,7 @@ export default ({
       });
     },*/
 
-    /*renderLineChart: function(chartContent) {
-      this.lineChartContents = chartContent;
-
-      const options = {
-        tension: 0.4,
-        borderWidth: 0,
-        pointRadius: 0,
-        borderWidth: 3,
-        maxBarThickness: 6,
-        borderColor: ['#1890FF', '#B37FEB']
-      }
-
-      let dataSets = [];
-      new Promise((resolve) => {
-        chartContent.forEach((content, index) => {
-
-          let thisDataSet = {
-            data: this.computedLineChartContents[index]['data'],
-            label: this.computedLineChartContents[index]['title'],
-            tension: options.tension,
-            borderWidth: options.borderWidth,
-            pointRadius: options.pointRadius,
-            borderColor: options.borderColor[index],
-            borderWidth: options.borderWidth,
-            maxBarThickness: options.maxBarThickness
-          }
-
-          dataSets.push(thisDataSet);
-
-        })
-        if (dataSets.length == 2) { 
-          resolve() 
-        }
-      }).then(() => {
-        const lineChartCtx = this.$refs.lineChart.getContext("2d");
-        this.lineChart = new Chart(lineChartCtx, {
-            type: "line",
-            data: {
-              labels: this.computedLineChartContents[0]['labels'],
-              datasets: dataSets
-            },
-            options: {
-              layout: {
-                padding: {
-                  top: 30,
-                  right: 15,
-                  left: 10,
-                  bottom: 5,
-                },
-              },
-              responsive: true,
-              maintainAspectRatio: false,
-              plugins: {
-                legend: {
-                  display: false,
-                },
-              },
-              tooltips: {
-                enabled: true,
-                mode: "index",
-                intersect: false,
-              },
-              scales: {
-                y: {
-                  grid: {
-                    display: true,
-                    color: "rgba(0, 0, 0, .2)",
-                    zeroLineColor: "#000000",
-                    borderDash: [6],
-                    borderDashOffset: [6],
-                  },
-                  ticks: {
-                    suggestedMin: 0,
-                    suggestedMax: 1000,
-                    display: true,
-                    color: "#8C8C8C",
-                    callback: function(value) {
-                      return toCurrency(value);
-                    },
-                    font: {
-                      size: 14,
-                      lineHeight: 1.8,
-                      weight: '600',
-                      family: "Open Sans",
-                    },
-                  },
-                },
-                x: {
-                  grid: {
-                    display: false,
-                  },
-                  ticks: {
-                    display: true,
-                    color: "#8C8C8C",
-                    font: {
-                      size: 14,
-                      lineHeight: 1.5,
-                      weight: '600',
-                      family: "Open Sans",
-                    },
-                  },
-                },
-              },
-            }
-          });
-      })
-
-    }
-
-  },*/
+  // },
 
   computed: {
 
@@ -988,18 +994,14 @@ export default ({
         this.otherAssets.house = finances.assets[2].dollar_amt_k
         this.otherAssets.cars = finances.assets[1].dollar_amt_k
 
-      });
+        // line chart 
+        let lineChartAssetsLabels = ['1/1/22','2/1/22','3/1/22','4/1/22','5/1/22','6/1/22','7/1/22','8/1/22','9/1/22','10/1/22'];
+        let lineChartAssetsData = [1,8,3,1,6,10,3,5,10];
+        let lineChartAssetsContent = {title: 'Assets', labels: lineChartAssetsLabels, data: lineChartAssetsData};
+        let lineChartContent = [lineChartAssetsContent];
+        this.renderLineChart(lineChartContent);
 
-        // net worth bar chart 
-        // let labels = [];
-        // let data = [];
-        // cashNetWorth.forEach((monthObj) => {
-        //   labels.push(monthObj.month);
-        //   data.push(monthObj.balance);
-        // });
-        // let barChartContents = { 'labels': labels, 'data': data }
-        // this.renderBarChart(barChartContents);
-      
+      });
 
 
 
