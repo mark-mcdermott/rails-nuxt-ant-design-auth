@@ -278,6 +278,9 @@ export default ({
         this.assetAccts = finances.accounts.asset_accounts;
         this.debtAccts = finances.accounts.debt_accounts;
 
+        // budgets 
+        this.budgets = finances.budgets
+
         // let userAssetAccts = [];
         // let userDebtAccts = [];
         // accts.forEach(acct => {
