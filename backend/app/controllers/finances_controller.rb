@@ -115,92 +115,8 @@ class FinancesController < ApplicationController
       transactions_tables[acct_name] = transactions_table_arr
     end
 
-    # this month's transactions
-    # TODO add logic here joining transaction.account_id to account and account_type to get account_type_id and account_type
-
-    # these_transactions = Transaction.includes(:account => [:account_type])
-    # these_transactions = AccountType.joins(:account).joins(:transaction)
-    # puts these_transactions
-
-    # these_transactions = User.select('transactions.id,transactions.account_id,account.name,transactions.date,
-    #                                   transactions.description,transactions.purchase_type_id,
-    #                                   transactions.amount,transactions.balance,')
-    #                          .joins(:transactions).where(id: user)
-    #                          .joins(:accounts)
-    # these_transactions.each do |trans|
-    #   puts trans.inspect
-    # end
-
-    # purchase_type_spent_this_month = {}
-    # first_of_this_month = Date.today.beginning_of_month
-    # transactions_all_accts_this_month = Transaction.where(:user => user).where(date: first_of_this_month..Time.now)
-    #
-    # PurchaseType.all.each do |purchase_type|
-    #   purchase_type_id = purchase_type.id
-    #   purchase_type_name = purchase_type.name
-    #   purchase_type_amount_spent_this_month = 0
-    #
-    #   transactions_all_accts_this_month.each do |trans|
-    #     amount = trans.amount.gsub(/[^0-9\.-]/, '').to_f
-    #     trans_purchase_type_id = trans.purchase_type_id
-    #     trans_account_id = trans.account_id
-    #     acct_type_id = Account.select(:id,:account_type_id).where(:id => trans_account_id)[0]['account_type_id'].to_i
-    #     acct_type_name = AccountType.select(:id,:name).where(:id => acct_type_id)[0].name
-    #     if trans_purchase_type_id == purchase_type_id
-    #       if acct_type_name == 'asset'
-    #         purchase_type_amount_spent_this_month -= amount
-    #       elsif acct_type_name == 'debt'
-    #         purchase_type_amount_spent_this_month += amount
-    #       end
-    #     end
-    #   end
-    #   purchase_type_obj = { purchase_type_name => dollar_amt(purchase_type_amount_spent_this_month) }
-    #   purchase_type_spent_this_month[purchase_type_id] = purchase_type_obj
-    # end
-
-
-
-    # this_months_transactions = {}
-    # first_of_this_month = Date.today.beginning_of_month
-    # account_transactions.each do |acct_name, transactions_accounts|
-    #   transactions_accounts_arr = []
-    #   transactions_accounts.each do |trans|
-    #     if trans.date >= first_of_this_month
-    #       transactions_accounts_arr.push(trans)
-    #     end
-    #   end
-    #   this_months_transactions[acct_name] = transactions_accounts_arr
-    # end
-
     transactions = {'all_transactions' => all_transactions, 'account_transactions' => account_transactions,
                     'transactions_tables' => transactions_tables}
-
-    # transactions = {'all_transactions' => all_transactions, 'account_transactions' => account_transactions,
-    #                 'transactions_tables' => transactions_tables, 'this_months_transactions' => this_months_transactions}
-
-    # spent already this month
-    spent_this_month = {}
-    # PurchaseType.all.each do |purchase_type|
-    #   purchase_type_name = purchase_type.name
-    #   purchase_type_id = purchase_type.id
-    #   spent_this_month_for_purchase_type = 0
-    #
-    #   this_months_transactions.each do |acct_name, this_month_transactions_account|
-    #   #   this_month_transactions_account.each do |trans|
-    #   #     if trans.purchase_type_id == purchase_type.id
-    #   #       trans_amount_str = trans.amount
-    # #         trans_amount = trans_amount_str.gsub(/[^0-9\.-]/, '').to_f
-    # #         # TODO needs logic where checking amounts are subtracted and credit amounts are added
-    # #         # so it needs logic checking which account type each purchase is
-    # #         spent_this_month_for_purchase_type += trans_amount
-    # #       end
-    # #     end
-    #   end
-    # #   spent_this_month_for_purchase_type = dollar_amt(spent_this_month_for_purchase_type)
-    # #   spent_this_month[purchase_type_name] = spent_this_month_for_purchase_type
-    # end
-
-    # purchase type amounts already spent this month
 
     purchase_type_spent_this_month = {}
     first_of_this_month = Date.today.beginning_of_month
@@ -237,14 +153,8 @@ class FinancesController < ApplicationController
       purchase_type_id = budget['purchase_type_id']
       name = PurchaseType.find(purchase_type_id).name.titleize
       spent = purchase_type_spent_this_month[purchase_type_id].values[0]
-      # purchase_type = PurchaseType.find(budget['purchase_type_id']).name
-      # budget[:purchase_type] = purchase_type
       budget[:name] = name
       budget[:spent] = spent
-
-      # spent_already = spent_this_month[:purchase_type]
-      # puts spent_already
-
       budgets.push(budget)
     end
 
@@ -275,12 +185,10 @@ class FinancesController < ApplicationController
         # if date_counter date is missing, use last balance
         if date_counter != sparse_balance_acct[sparse_bal_counter].as_json['date'].to_datetime
           filled_balances_arr.push({'date'=>date_counter, 'balance'=>last_bal})
-          # puts date_counter.to_s + ': ' + last_bal
 
         # otherwise use date_counter balance
         else
           filled_balances_arr.push({'date'=>sparse_balance_acct[sparse_bal_counter].as_json['date'].to_datetime, 'balance'=>sparse_balance_acct[sparse_bal_counter].as_json['balance']})
-          # puts sparse_balance_acct[sparse_bal_counter].as_json['date'] + ': ' + sparse_balance_acct[sparse_bal_counter].as_json['balance']
           last_bal = sparse_balance_acct[sparse_bal_counter].as_json['balance']
           sparse_bal_counter += 1
         end
@@ -289,7 +197,6 @@ class FinancesController < ApplicationController
         while sparse_balance_acct[sparse_bal_counter] != nil && sparse_balance_acct[sparse_bal_counter].as_json['date'].to_datetime == date_counter
           filled_balances_arr.push({'date'=>date_counter, 'balance'=>sparse_balance_acct[sparse_bal_counter].as_json['balance']})
           last_bal = sparse_balance_acct[sparse_bal_counter].as_json['balance']
-          # puts date_counter.to_s + ': ' + sparse_balance_acct[sparse_bal_counter].as_json['balance']
           sparse_bal_counter += 1
         end
 
