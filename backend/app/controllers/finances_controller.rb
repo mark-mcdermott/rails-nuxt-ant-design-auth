@@ -131,32 +131,32 @@ class FinancesController < ApplicationController
     #   puts trans.inspect
     # end
 
-    purchase_type_spent_this_month = {}
-    first_of_this_month = Date.today.beginning_of_month
-    transactions_all_accts_this_month = Transaction.where(:user => user).where(date: first_of_this_month..Time.now)
-
-    PurchaseType.all.each do |purchase_type|
-      purchase_type_id = purchase_type.id
-      purchase_type_name = purchase_type.name
-      purchase_type_amount_spent_this_month = 0
-
-      transactions_all_accts_this_month.each do |trans|
-        amount = trans.amount.gsub(/[^0-9\.-]/, '').to_f
-        trans_purchase_type_id = trans.purchase_type_id
-        trans_account_id = trans.account_id
-        acct_type_id = Account.select(:id,:account_type_id).where(:id => trans_account_id)[0]['account_type_id'].to_i
-        acct_type_name = AccountType.select(:id,:name).where(:id => acct_type_id)[0].name
-        if trans_purchase_type_id == purchase_type_id
-          if acct_type_name == 'asset'
-            purchase_type_amount_spent_this_month -= amount
-          elsif acct_type_name == 'debt'
-            purchase_type_amount_spent_this_month += amount
-          end
-        end
-      end
-      purchase_type_obj = { purchase_type_name => dollar_amt(purchase_type_amount_spent_this_month) }
-      purchase_type_spent_this_month[purchase_type_id] = purchase_type_obj
-    end
+    # purchase_type_spent_this_month = {}
+    # first_of_this_month = Date.today.beginning_of_month
+    # transactions_all_accts_this_month = Transaction.where(:user => user).where(date: first_of_this_month..Time.now)
+    #
+    # PurchaseType.all.each do |purchase_type|
+    #   purchase_type_id = purchase_type.id
+    #   purchase_type_name = purchase_type.name
+    #   purchase_type_amount_spent_this_month = 0
+    #
+    #   transactions_all_accts_this_month.each do |trans|
+    #     amount = trans.amount.gsub(/[^0-9\.-]/, '').to_f
+    #     trans_purchase_type_id = trans.purchase_type_id
+    #     trans_account_id = trans.account_id
+    #     acct_type_id = Account.select(:id,:account_type_id).where(:id => trans_account_id)[0]['account_type_id'].to_i
+    #     acct_type_name = AccountType.select(:id,:name).where(:id => acct_type_id)[0].name
+    #     if trans_purchase_type_id == purchase_type_id
+    #       if acct_type_name == 'asset'
+    #         purchase_type_amount_spent_this_month -= amount
+    #       elsif acct_type_name == 'debt'
+    #         purchase_type_amount_spent_this_month += amount
+    #       end
+    #     end
+    #   end
+    #   purchase_type_obj = { purchase_type_name => dollar_amt(purchase_type_amount_spent_this_month) }
+    #   purchase_type_spent_this_month[purchase_type_id] = purchase_type_obj
+    # end
 
 
 
@@ -200,13 +200,47 @@ class FinancesController < ApplicationController
     # #   spent_this_month[purchase_type_name] = spent_this_month_for_purchase_type
     # end
 
+    # purchase type amounts already spent this month
+
+    purchase_type_spent_this_month = {}
+    first_of_this_month = Date.today.beginning_of_month
+    transactions_all_accts_this_month = Transaction.where(:user => user).where(date: first_of_this_month..Time.now)
+
+    PurchaseType.all.each do |purchase_type|
+      purchase_type_id = purchase_type.id
+      purchase_type_name = purchase_type.name
+      purchase_type_amount_spent_this_month = 0
+
+      transactions_all_accts_this_month.each do |trans|
+        amount = trans.amount.gsub(/[^0-9\.-]/, '').to_f
+        trans_purchase_type_id = trans.purchase_type_id
+        trans_account_id = trans.account_id
+        acct_type_id = Account.select(:id,:account_type_id).where(:id => trans_account_id)[0]['account_type_id'].to_i
+        acct_type_name = AccountType.select(:id,:name).where(:id => acct_type_id)[0].name
+        if trans_purchase_type_id == purchase_type_id
+          if acct_type_name == 'asset'
+            purchase_type_amount_spent_this_month -= amount
+          elsif acct_type_name == 'debt'
+            purchase_type_amount_spent_this_month += amount
+          end
+        end
+      end
+      purchase_type_obj = { purchase_type_name => dollar_amt(purchase_type_amount_spent_this_month) }
+      purchase_type_spent_this_month[purchase_type_id] = purchase_type_obj
+    end
+
     # budgets
     budgets = []
     active_record_budgets = User.select('budgets.id,budgets.value,budgets.purchase_type_id,budgets.user_id,users.email').joins(:budgets).where(id: user)
     active_record_budgets.each do |budget|
       budget = budget.attributes
-      purchase_type = PurchaseType.find(budget['purchase_type_id']).name
-      budget[:purchase_type] = purchase_type
+      purchase_type_id = budget['purchase_type_id']
+      name = PurchaseType.find(purchase_type_id).name.titleize
+      spent = purchase_type_spent_this_month[purchase_type_id].values[0]
+      # purchase_type = PurchaseType.find(budget['purchase_type_id']).name
+      # budget[:purchase_type] = purchase_type
+      budget[:name] = name
+      budget[:spent] = spent
 
       # spent_already = spent_this_month[:purchase_type]
       # puts spent_already
@@ -525,8 +559,7 @@ class FinancesController < ApplicationController
     #             'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs,
     #             'spent_this_month' => spent_this_month}
     finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions,
-                'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs,
-                'purchase_type_spent_this_month' => purchase_type_spent_this_month}
+                'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs}
     render json: finances
   end 
 

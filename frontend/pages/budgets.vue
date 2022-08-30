@@ -165,7 +165,7 @@
                       <div :id="'category-'+budget.category_id">
                         <input class="budget-input budget-name" type="text" name="name" :value="budget.name" placeholder="Name" readonly />
                         <input class="budget-input budget-value" type="text" name="value" :value="budget.value" placeholder="Amount" readonly />
-                        <span class="spent">Spent: $500</span>
+                        <span class="spent">Spent: {{budget.spent}}</span>
                       </div>
                       <div class="col-action">
                         <a-button class="edit-button" @click.prevent="editBudget(budget.id)" type="link" size="small" title="edit">
