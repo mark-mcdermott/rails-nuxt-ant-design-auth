@@ -1,4 +1,5 @@
 require 'money-rails'
+require 'active_support'
 
 class FinancesController < ApplicationController
 
@@ -77,16 +78,6 @@ class FinancesController < ApplicationController
       assets.push(asset_hash)
     end
 
-    # budgets
-    budgets = []
-    active_record_budgets = User.select('budgets.id,budgets.value,budgets.purchase_type_id,budgets.user_id,users.email').joins(:budgets).where(id: user)
-    active_record_budgets.each do |budget|
-      budget = budget.attributes
-      purchase_type = PurchaseType.find(budget['purchase_type_id']).name
-      budget[:purchase_type] = purchase_type
-      budgets.push(budget)
-    end
-
     # transactions
     all_transactions = []
     all_active_record_transactions = User.select('transactions.id,transactions.account_id,transactions.date,transactions.description,transactions.purchase_type_id,transactions.amount,transactions.balance').joins(:transactions).where(id: user)
@@ -124,8 +115,74 @@ class FinancesController < ApplicationController
       transactions_tables[acct_name] = transactions_table_arr
     end
 
+    # this month's transactions
+    # TODO add logic here joining transaction.account_id to account and account_type to get account_type_id and account_type
+
+    # these_transactions = Transaction.includes(:account => [:account_type])
+    these_transactions = AccountType.joins(:account).joins(:transaction)
+    puts these_transactions
+
+    # these_transactions = User.select('transactions.id,transactions.account_id,account.name,transactions.date,
+    #                                   transactions.description,transactions.purchase_type_id,
+    #                                   transactions.amount,transactions.balance,')
+    #                          .joins(:transactions).where(id: user)
+    #                          .joins(:accounts)
+    # these_transactions.each do |trans|
+    #   puts trans.inspect
+    # end
+
+
+    # this_months_transactions = {}
+    # first_of_this_month = Date.today.beginning_of_month
+    # account_transactions.each do |acct_name, transactions_accounts|
+    #   transactions_accounts_arr = []
+    #   transactions_accounts.each do |trans|
+    #     if trans.date >= first_of_this_month
+    #       transactions_accounts_arr.push(trans)
+    #     end
+    #   end
+    #   this_months_transactions[acct_name] = transactions_accounts_arr
+    # end
+
     transactions = {'all_transactions' => all_transactions, 'account_transactions' => account_transactions,
                     'transactions_tables' => transactions_tables}
+
+    # transactions = {'all_transactions' => all_transactions, 'account_transactions' => account_transactions,
+    #                 'transactions_tables' => transactions_tables, 'this_months_transactions' => this_months_transactions}
+
+    # spent already this month
+    # spent_this_month = {}
+    # PurchaseType.all.each do |purchase_type|
+    #   purchase_type_name = purchase_type.name
+    #   spent_this_month_for_purchase_type = 0
+    #   this_months_transactions.each do |acct_name, this_month_transactions_account|
+    #     this_month_transactions_account.each do |trans|
+    #       if trans.purchase_type_id == purchase_type.id
+    #         trans_amount_str = trans.amount
+    #         trans_amount = trans_amount_str.gsub(/[^0-9\.-]/, '').to_f
+    #         # TODO needs logic where checking amounts are subtracted and credit amounts are added
+    #         # so it needs logic checking which account type each purchase is
+    #         spent_this_month_for_purchase_type += trans_amount
+    #       end
+    #     end
+    #   end
+    #   spent_this_month_for_purchase_type = dollar_amt(spent_this_month_for_purchase_type)
+    #   spent_this_month[purchase_type_name] = spent_this_month_for_purchase_type
+    # end
+
+    # budgets
+    budgets = []
+    active_record_budgets = User.select('budgets.id,budgets.value,budgets.purchase_type_id,budgets.user_id,users.email').joins(:budgets).where(id: user)
+    active_record_budgets.each do |budget|
+      budget = budget.attributes
+      purchase_type = PurchaseType.find(budget['purchase_type_id']).name
+      budget[:purchase_type] = purchase_type
+
+      # spent_already = spent_this_month[:purchase_type]
+      # puts spent_already
+
+      budgets.push(budget)
+    end
 
     # balances
     # "sparse balances" are straight from the transactions list - it can skip days and there can be multiple balances on one day
@@ -434,8 +491,11 @@ class FinancesController < ApplicationController
 
     # graphs = {'net_worth' => net_worth_graph, 'checking_and_credit' => line_graph}
 
+    # finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions,
+    #             'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs,
+    #             'spent_this_month' => spent_this_month}
     finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions,
-                'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs}
+                    'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs}
     render json: finances
   end 
 

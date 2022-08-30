@@ -335,77 +335,88 @@ export default ({
         input.removeAttribute('readonly');
       });
     },
+
     saveBudget(budgetId) {
 
-      let error = false;
-      // get the input vals
-      const budget = document.getElementById('budget-'+budgetId);
-      const inputs = budget.getElementsByClassName('budget-input')
-      const inputsArr = Array.prototype.slice.call(inputs)
-      let name;
-      let value;
-      inputsArr.forEach((input) => {
-        if (input.name == 'name') {
-          name = input.value;
-        } else if (input.name == 'value') {
-          value = input.value;
-        }
-      });
+      console.log('save')
+
       const userId = this.$auth.user.id;
-      const spentHtmlCollection = budget.getElementsByClassName('spent');
-      const spentArr = Array.prototype.slice.call(spentHtmlCollection);
-      const spent = spentArr[0];
-      
-      // some error checking
-      const categoriesApi = '/category-names/user/' + userId;
-      if (name == '') {
-        spent.classList.add('error');
-        spent.innerText = "Name can't be blank";
-      
-      } else {
+      const createBudgetApi = '/budgets/' + userId + '/' + name.toLowerCase() + '/' + value;
+        this.$axios.$post(createBudgetApi)
+          .then((res) => {
+            console.log(res)
+          });
+      },
 
-        // if new budget, create new budget in db
-        if (budgetId == undefined) {
+      // let error = false;
+      // // get the input vals
+      // const budget = document.getElementById('budget-'+budgetId);
+      // const inputs = budget.getElementsByClassName('budget-input')
+      // const inputsArr = Array.prototype.slice.call(inputs)
+      // let name;
+      // let value;
+      // inputsArr.forEach((input) => {
+      //   if (input.name == 'name') {
+      //     name = input.value;
+      //   } else if (input.name == 'value') {
+      //     value = input.value;
+      //   }
+      // });
+      // const userId = this.$auth.user.id;
+      // const spentHtmlCollection = budget.getElementsByClassName('spent');
+      // const spentArr = Array.prototype.slice.call(spentHtmlCollection);
+      // const spent = spentArr[0];
+      
+      // // some error checking
+      // const categoriesApi = '/category-names/user/' + userId;
+      // if (name == '') {
+      //   spent.classList.add('error');
+      //   spent.innerText = "Name can't be blank";
+      
+      // } else {
+
+      //   // if new budget, create new budget in db
+      //   if (budgetId == undefined) {
           
-          // create budget in db
-          this.$axios.$get(categoriesApi)
-            .then((userCategories) => {
+      //     // create budget in db
+      //     this.$axios.$get(categoriesApi)
+      //       .then((userCategories) => {
 
-              // some more error checking first
-              if (userCategories.includes(name.toLowerCase())) {
-                spent.classList.add('error');
-                spent.innerText = "You already have " + name;
-              } else {
+      //         // some more error checking first
+      //         if (userCategories.includes(name.toLowerCase())) {
+      //           spent.classList.add('error');
+      //           spent.innerText = "You already have " + name;
+      //         } else {
 
-                // now create budget in db
-                const createBudgetApi = '/budgets/' + userId + '/' + name.toLowerCase() + '/' + value;
-                this.$axios.$post(createBudgetApi)
-                  .then((res) => {
-                    console.log(res)
-                  });
-              }
-            });
+      //           // now create budget in db
+      //           const createBudgetApi = '/budgets/' + userId + '/' + name.toLowerCase() + '/' + value;
+      //           this.$axios.$post(createBudgetApi)
+      //             .then((res) => {
+      //               console.log(res)
+      //             });
+      //         }
+      //       });
 
-        // if pre-existing budget, edit current record in db
-        } else {
-          const editBudgetApi = '/budgets/' + budgetId + '/' + name.toLowerCase() + '/' + value;
-          this.$axios.$put(editBudgetApi)
-            .then((res) => {
-              console.log(res)
-            }); 
-        }
+      //   // if pre-existing budget, edit current record in db
+      //   } else {
+      //     const editBudgetApi = '/budgets/' + budgetId + '/' + name.toLowerCase() + '/' + value;
+      //     this.$axios.$put(editBudgetApi)
+      //       .then((res) => {
+      //         console.log(res)
+      //       }); 
+      //   }
 
-      }
+      // }
 
-      // set budget back to read mode
-      if (!error) {
-        budget.classList.remove('editable');
-        inputsArr.forEach((input) => {
-          input.readOnly = true;
-        });
-      }
+      // // set budget back to read mode
+      // if (!error) {
+      //   budget.classList.remove('editable');
+      //   inputsArr.forEach((input) => {
+      //     input.readOnly = true;
+      //   });
+      // }
 
-    },
+    // },
     deleteBudget(id) {
       const deleteBudgetApi = '/budgets/' + id;
       this.$axios.$delete(deleteBudgetApi)

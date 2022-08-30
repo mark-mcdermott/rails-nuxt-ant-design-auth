@@ -1,3 +1,3 @@
 class AccountType < ApplicationRecord
-  has_many :accounts
+  has_many :account
 end
