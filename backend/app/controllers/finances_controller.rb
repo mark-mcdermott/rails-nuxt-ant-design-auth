@@ -119,8 +119,8 @@ class FinancesController < ApplicationController
     # TODO add logic here joining transaction.account_id to account and account_type to get account_type_id and account_type
 
     # these_transactions = Transaction.includes(:account => [:account_type])
-    these_transactions = AccountType.joins(:account).joins(:transaction)
-    puts these_transactions
+    # these_transactions = AccountType.joins(:account).joins(:transaction)
+    # puts these_transactions
 
     # these_transactions = User.select('transactions.id,transactions.account_id,account.name,transactions.date,
     #                                   transactions.description,transactions.purchase_type_id,
