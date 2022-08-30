@@ -131,6 +131,34 @@ class FinancesController < ApplicationController
     #   puts trans.inspect
     # end
 
+    purchase_type_spent_this_month = {}
+    first_of_this_month = Date.today.beginning_of_month
+    transactions_all_accts_this_month = Transaction.where(:user => user).where(date: first_of_this_month..Time.now)
+
+    PurchaseType.all.each do |purchase_type|
+      purchase_type_id = purchase_type.id
+      purchase_type_name = purchase_type.name
+      purchase_type_amount_spent_this_month = 0
+
+      transactions_all_accts_this_month.each do |trans|
+        amount = trans.amount.gsub(/[^0-9\.-]/, '').to_f
+        trans_purchase_type_id = trans.purchase_type_id
+        trans_account_id = trans.account_id
+        acct_type_id = Account.select(:id,:account_type_id).where(:id => trans_account_id)[0]['account_type_id'].to_i
+        acct_type_name = AccountType.select(:id,:name).where(:id => acct_type_id)[0].name
+        if trans_purchase_type_id == purchase_type_id
+          if acct_type_name == 'asset'
+            purchase_type_amount_spent_this_month -= amount
+          elsif acct_type_name == 'debt'
+            purchase_type_amount_spent_this_month += amount
+          end
+        end
+      end
+      purchase_type_obj = { purchase_type_name => dollar_amt(purchase_type_amount_spent_this_month) }
+      purchase_type_spent_this_month[purchase_type_id] = purchase_type_obj
+    end
+
+
 
     # this_months_transactions = {}
     # first_of_this_month = Date.today.beginning_of_month
@@ -151,23 +179,25 @@ class FinancesController < ApplicationController
     #                 'transactions_tables' => transactions_tables, 'this_months_transactions' => this_months_transactions}
 
     # spent already this month
-    # spent_this_month = {}
+    spent_this_month = {}
     # PurchaseType.all.each do |purchase_type|
     #   purchase_type_name = purchase_type.name
+    #   purchase_type_id = purchase_type.id
     #   spent_this_month_for_purchase_type = 0
+    #
     #   this_months_transactions.each do |acct_name, this_month_transactions_account|
-    #     this_month_transactions_account.each do |trans|
-    #       if trans.purchase_type_id == purchase_type.id
-    #         trans_amount_str = trans.amount
-    #         trans_amount = trans_amount_str.gsub(/[^0-9\.-]/, '').to_f
-    #         # TODO needs logic where checking amounts are subtracted and credit amounts are added
-    #         # so it needs logic checking which account type each purchase is
-    #         spent_this_month_for_purchase_type += trans_amount
-    #       end
-    #     end
+    #   #   this_month_transactions_account.each do |trans|
+    #   #     if trans.purchase_type_id == purchase_type.id
+    #   #       trans_amount_str = trans.amount
+    # #         trans_amount = trans_amount_str.gsub(/[^0-9\.-]/, '').to_f
+    # #         # TODO needs logic where checking amounts are subtracted and credit amounts are added
+    # #         # so it needs logic checking which account type each purchase is
+    # #         spent_this_month_for_purchase_type += trans_amount
+    # #       end
+    # #     end
     #   end
-    #   spent_this_month_for_purchase_type = dollar_amt(spent_this_month_for_purchase_type)
-    #   spent_this_month[purchase_type_name] = spent_this_month_for_purchase_type
+    # #   spent_this_month_for_purchase_type = dollar_amt(spent_this_month_for_purchase_type)
+    # #   spent_this_month[purchase_type_name] = spent_this_month_for_purchase_type
     # end
 
     # budgets
@@ -495,7 +525,8 @@ class FinancesController < ApplicationController
     #             'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs,
     #             'spent_this_month' => spent_this_month}
     finances = {'accounts' => accounts, 'assets' => assets, 'budgets' => budgets, 'transactions' => transactions,
-                    'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs}
+                'balances' => balances, 'net_worth' => net_worth_arr, 'graphs' => graphs,
+                'purchase_type_spent_this_month' => purchase_type_spent_this_month}
     render json: finances
   end 
 
