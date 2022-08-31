@@ -21,6 +21,12 @@ namespace :db do
       Dir[File.join(Rails.root, 'db', 'seeds', '*.rb')].sort.each do |filename|
         load(filename)
       end
+      Dir[File.join(Rails.root, 'db', 'seeds', 'user_1', '*.rb')].sort.each do |filename|
+        load(filename)
+      end
+      Dir[File.join(Rails.root, 'db', 'seeds', 'user_2', '*.rb')].sort.each do |filename|
+        load(filename)
+      end
     end
 
   end

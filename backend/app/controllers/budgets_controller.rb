@@ -2,25 +2,70 @@ class BudgetsController < ApplicationController
 
   # POST '/budgets/:user_id/:budget_name/:budget_value'
   def create_budget
-
     # new_budget = Budget.create(:category_id => category_id, :user_id => params[:user_id], :value => params[:budget_value])
     # new_budget.save!
 
-    # # if category already exists, just create the budget
-    # if Category.find_by name: params[:budget_name]
-    #   category = Category.find_by name: params[:budget_name]
-    #   category_id = category.id
-    #   new_budget = Budget.create(:category_id => category_id, :user_id => params[:user_id], :value => params[:budget_value])
-    #   new_budget.save!
-    # else
+    # if category already exists, just create the budget
+    if PurchaseType.find_by name: params[:budget_name]
+      puts '1'
+      purchase_type = PurchaseType.find_by name: params[:budget_name]
+      purchase_type_id = purchase_type.id
+
+      # check if user already has a budget with this purchase type
+      found = false
+      user_budgets = Budget.where(user_id: params[:user_id])
+      user_budgets.each do |budget|
+        this_purchase_type_id = budget.purchase_type_id
+        if this_purchase_type_id == purchase_type_id
+          puts '2'
+          found = true
+        end
+      end
+      if !found
+        puts '3'
+        new_budget = Budget.create(:purchase_type_id => purchase_type_id, :value => params[:budget_value], :user_id => params[:user_id])
+        new_budget.save!
+      end
+      # user_budget_of_same_purchase_type_json = user_budget_of_same_purchase_type.as_json
+      # if Budget.find_by(user_id: params[:user_id], purchase_type_id: purchase_type_id).nil?
+      #   puts 'no length'
+      # else
+      #   puts 'length'
+      # end
+
+      # user_budget_of_same_purchase_type = Budget.find_by(user_id: params[:user_id], purchase_type_id: purchase_type_id)
+      # user_budget_of_same_purchase_type_json = user_budget_of_same_purchase_type.as_json
+      # if Budget.find_by(user_id: params[:user_id], purchase_type_id: purchase_type_id).nil?
+      #   puts 'no length'
+      # else
+      #   puts 'length'
+      # end
+      #   puts 'found'
+      # else
+      #   puts 'not found'
+      # end
+      # puts 'ni'
+      # puts user_budget_of_same_purchase_type
+      #   new_budget = Budget.create(:purchase_type_id => purchase_type_id, :value => params[:budget_value], :user_id => params[:user_id])
+      #   new_budget.save!
+
+      # else
+      #   puts 'user already has a this budget'
+      #   render json: 'user already has this budget'
+      # end
+
+
+    else
+      puts '4'
     #   # if category is new, create the category and then create the budget
-    #   new_category = Category.create(:name => params[:budget_name])
+    #   new_purchase_type = PurchaseType.create(:name => params[:budget_name])
     #   new_category.save!
     #   new_category = Category.find_by name: params[:budget_name]
     #   new_category_id = new_category.id
     #   new_budget = Budget.create(:category_id => new_category_id, :user_id => params[:user_id], :value => params[:budget_value])
     #   new_budget.save!
-    # end
+    end
+    render json: 'hi'
   end
 
   # PUT '/budgets/:budget_id/:budget_name/:budget_value
