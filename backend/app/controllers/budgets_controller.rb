@@ -63,8 +63,7 @@ class BudgetsController < ApplicationController
     # budget.save!
 
   end
-
-  # THIS WORKS # TODO DELTE THIS LINE
+  
   # DELETE '/budgets/:budget_id'
   def destroy_budget
     budget = Budget.find params[:budget_id]
@@ -73,62 +72,64 @@ class BudgetsController < ApplicationController
   end
 
   # GET '/budgets/:user_id'
-  def find_budgets
-
-    # get the budgets with the correct category names
-    budgets = Budget.where(:user_id => params[:user_id]);
-    budgets_arr = []
-    purchase_type_ids_arr = []
-
-    # get purchase type names
-    budgets.each do |budget|
-      purchase_type_id = budget.purchase_type_id
-      purchase_type = PurchaseType.find(purchase_type_id);
-      id = budget.id
-      lower_case_name = purchase_type.name
-      name = lower_case_name.capitalize
-      value = budget.value
-      purchase_type_id = budget.purchase_type_id
-      budget_hash = { 'id' => id, 'name' => name, 'value' => value, 'purchase_type_id' => purchase_type_id }
-      budgets_arr.push(budget_hash)
-      if purchase_type_ids_arr.exclude?(purchase_type_id)
-        purchase_type_ids_arr.push(purchase_type_id)
-      end
-    end
-
-    # get spent amounts from sum of transaction amounts by category
-    
-    # get all transactions where transactions.user_id = user_id
-    transactions = Transaction.where(:user_id => params[:user_id], :date => Date.today.at_beginning_of_month..Date.today);
-    # transactions = Transaction.all
-
-    purchase_type_ids_arr.each do |category_id|
-      category_sum = 0
-      transactions.each do |transaction|
-        if (transaction.category_id == category_id)
-
-        end
-      end
-    end
-
-    render json: budgets # TODO: Remove this line
-
-    # transactions = Transaction.where(:user_id => params[:user_id], );
-    #                Author.joins("INNER JOIN books ON books.author_id = authors.id AND books.out_of_print = FALSE")
-
-    ## from those, get array of array of objects where each subarray is a category and each object is a transaction in that category
-
-
-    # render json: transactions
-    #render json: budgets_arr
-  end
+  # TODO: commenting out, I dont' think this is necessary anymore (probably delete eventually)
+  # def find_budgets
+  #
+  #   # get the budgets with the correct category names
+  #   budgets = Budget.where(:user_id => params[:user_id]);
+  #   budgets_arr = []
+  #   purchase_type_ids_arr = []
+  #
+  #   # get purchase type names
+  #   budgets.each do |budget|
+  #     purchase_type_id = budget.purchase_type_id
+  #     purchase_type = PurchaseType.find(purchase_type_id);
+  #     id = budget.id
+  #     lower_case_name = purchase_type.name
+  #     name = lower_case_name.capitalize
+  #     value = budget.value
+  #     purchase_type_id = budget.purchase_type_id
+  #     budget_hash = { 'id' => id, 'name' => name, 'value' => value, 'purchase_type_id' => purchase_type_id }
+  #     budgets_arr.push(budget_hash)
+  #     if purchase_type_ids_arr.exclude?(purchase_type_id)
+  #       purchase_type_ids_arr.push(purchase_type_id)
+  #     end
+  #   end
+  #
+  #   # get spent amounts from sum of transaction amounts by category
+  #
+  #   # get all transactions where transactions.user_id = user_id
+  #   transactions = Transaction.where(:user_id => params[:user_id], :date => Date.today.at_beginning_of_month..Date.today);
+  #   # transactions = Transaction.all
+  #
+  #   purchase_type_ids_arr.each do |category_id|
+  #     category_sum = 0
+  #     transactions.each do |transaction|
+  #       if (transaction.category_id == category_id)
+  #
+  #       end
+  #     end
+  #   end
+  #
+  #   render json: budgets # TODO: Remove this line
+  #
+  #   # transactions = Transaction.where(:user_id => params[:user_id], );
+  #   #                Author.joins("INNER JOIN books ON books.author_id = authors.id AND books.out_of_print = FALSE")
+  #
+  #   ## from those, get array of array of objects where each subarray is a category and each object is a transaction in that category
+  #
+  #
+  #   # render json: transactions
+  #   #render json: budgets_arr
+  # end
 
   # GET '/budgets/last-used-id
-  def find_last_used_id
-    budgets = Budget.all 
-    last_budget = budgets.last 
-    last_budget_id = last_budget.id
-    render json: last_budget_id
-  end
+  # TODO: commenting out, I dont' think this is necessary anymore (probably delete eventually)
+  # def find_last_used_id
+  #   budgets = Budget.all
+  #   last_budget = budgets.last
+  #   last_budget_id = last_budget.id
+  #   render json: last_budget_id
+  # end
 
 end
