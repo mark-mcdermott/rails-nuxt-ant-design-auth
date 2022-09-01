@@ -155,26 +155,26 @@
                       <a-col @click.prevent="addBudget" :span="24" :md="12" style="display: flex; align-items: center; justify-content: flex-end">
                         <a-button type="primary">
                           ADD NEW BUDGET
-                        </a-button>
+                        </a-button> 
                       </a-col>
                     </a-row>
                   </template>
               
                   <a-col v-for="budget in budgets" :span="24" :md="12" class="budget-item" :key="budget.id">
-                    <a-card :id="'budget-'+budget.id" class="payment-method-card budget-text">
+                    <a-card :id="'budget-'+budget.id" :class="budget.cssClass">
                       <div :id="'category-'+budget.category_id">
-                        <input class="budget-input budget-name" type="text" name="name" :value="budget.name" placeholder="Name" readonly />
-                        <input class="budget-input budget-value" type="text" name="value" :value="budget.value" placeholder="Amount" readonly />
+                        <input class="budget-input budget-name" type="text" name="name" v-model="budget.name" placeholder="Name" :readonly="budget.readOnly" />
+                        <input class="budget-input budget-value" type="text" name="value" v-model="budget.value" placeholder="Amount" :readonly="budget.readOnly" />
                         <span class="spent">Spent: {{budget.spent}}</span>
                       </div>
                       <div class="col-action">
-                        <a-button class="edit-button" @click.prevent="editBudget(budget.id)" type="link" size="small" title="edit">
+                        <a-button class="edit-button" @click.prevent="editBudget(budget)" type="link" size="small" title="edit">
                           <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="fill-muted" d="M13.5858 3.58579C14.3668 2.80474 15.6332 2.80474 16.4142 3.58579C17.1953 4.36683 17.1953 5.63316 16.4142 6.41421L15.6213 7.20711L12.7929 4.37868L13.5858 3.58579Z" fill="#111827"/>
                             <path class="fill-muted" d="M11.3787 5.79289L3 14.1716V17H5.82842L14.2071 8.62132L11.3787 5.79289Z" fill="#111827"/>
                           </svg>
                         </a-button>
-                        <a-button class="save-button" @click.prevent="saveBudget(budget.id)" type="link" size="small" title="save">
+                        <a-button class="save-button" @click.prevent="saveBudget(budget)" type="link" size="small" title="save">
                           <a-icon type="save" theme="filled" />
                         </a-button>
                         <a-button class="delete-button" @click.prevent="deleteBudget(budget.id)" type="link" size="small" title="delete">
@@ -253,7 +253,15 @@ export default ({
     // Sets layout's element's class based on route's meta data.
     layoutClass() {
       return this.$route.meta.layoutClass;
-    }
+    },
+    // computedBudgets : {
+    //   get() {
+    //     return this.budgets;
+    //   },
+    //   set(arr) {
+    //     this.budgets = arr
+    //   }
+    // },
   },
 
 // ! ||--------------------------------------------------------------------------------||
@@ -271,16 +279,23 @@ export default ({
     this.$axios.$get(financesApi)
       .then(finances => {
 
-        console.log(finances)
         this.finances = finances;
 
         // sidebar
         this.assetAccts = finances.accounts.asset_accounts;
         this.debtAccts = finances.accounts.debt_accounts;
 
-        // budgets 
-        this.budgets = finances.budgets
+        // get budgets
+        let budgets = []
+        for (const thisId in finances.budgets) {
+          finances.budgets[parseInt(thisId)].cssClass = 'payment-method-card budget-text';
+          finances.budgets[parseInt(thisId)].readOnly = 'readonly';
+          budgets.push(finances.budgets[parseInt(thisId)])
+        }        
+        this.budgets = budgets;
+        
 
+  
         // let userAssetAccts = [];
         // let userDebtAccts = [];
         // accts.forEach(acct => {
@@ -312,40 +327,33 @@ export default ({
 
   methods: {
     addBudget() {
-
       new Promise((resolve) => {
-        this.budgets.unshift({name: '', value: ''})
+        const id = '-undefined';
+        this.budgets.unshift({id:id,name:'',value:0,cssClass:'payment-method-card budget-text editable'})
         resolve();
-      }).then(() => {
-        const newBudget = document.getElementById('budget-undefined');
-        newBudget.classList.add('editable');
-        const inputs = newBudget.getElementsByClassName('budget-input')
-        const inputsArr = Array.prototype.slice.call(inputs)
-        inputsArr.forEach((input) => {
-          input.removeAttribute('readonly');
-        });
       })
     },
-    editBudget(id) {
-      const budget = document.getElementById('budget-'+id);
-      budget.classList.add('editable');
-      const inputs = budget.getElementsByClassName('budget-input')
-      const inputsArr = Array.prototype.slice.call(inputs)
-      inputsArr.forEach((input) => {
-        input.removeAttribute('readonly');
-      });
+    editBudget(budgetObj) {
+      console.log(budgetObj)
+      // const budget = document.getElementById('budget-'+id);
+      // budget.classList.add('editable');
+      // const inputs = budget.getElementsByClassName('budget-input')
+      // const inputsArr = Array.prototype.slice.call(inputs)
+      // inputsArr.forEach((input) => {
+      //   input.removeAttribute('readonly');
+      // });
     },
 
-    saveBudget(budgetId) {
+    saveBudget(budgetObj) {
 
-      console.log('save')
+      console.log(budgetObj)
 
-      const userId = this.$auth.user.id;
-      const createBudgetApi = '/budgets/' + userId + '/' + name.toLowerCase() + '/' + value;
-        this.$axios.$post(createBudgetApi)
-          .then((res) => {
-            console.log(res)
-          });
+      // const userId = this.$auth.user.id;
+      // const createBudgetApi = '/budgets/' + userId + '/' + budgetObj.name.toLowerCase() + '/' + budgetObj.value;
+      //   this.$axios.$post(createBudgetApi)
+      //     .then((res) => {
+      //       console.log(res)
+      //     });
       },
 
       // let error = false;

@@ -146,17 +146,20 @@ class FinancesController < ApplicationController
     end
 
     # budgets
-    budgets = []
-    active_record_budgets = User.select('budgets.id,budgets.value,budgets.purchase_type_id,budgets.user_id,users.email').joins(:budgets).where(id: user)
-    active_record_budgets.each do |budget|
-      budget = budget.attributes
-      purchase_type_id = budget['purchase_type_id']
-      name = PurchaseType.find(purchase_type_id).name.titleize
-      spent = purchase_type_spent_this_month[purchase_type_id].values[0]
-      budget[:name] = name
-      budget[:spent] = spent
-      budgets.push(budget)
-    end
+    # budgets = []
+    # budgets = {}
+    # active_record_budgets = User.select('budgets.id,budgets.value,budgets.purchase_type_id,budgets.user_id,users.email').joins(:budgets).where(id: user)
+    # active_record_budgets.each do |budget|
+    #   budget = budget.attributes
+    #   puts budget[:id]
+    #   purchase_type_id = budget['purchase_type_id']
+    #   name = PurchaseType.find(purchase_type_id).name.titleize
+    #   spent = purchase_type_spent_this_month[purchase_type_id].values[0]
+    #   budget[:name] = name
+    #   budget[:spent] = spent
+    #
+    #   # budgets.push(budget)
+    # end
 
     # balances
     # "sparse balances" are straight from the transactions list - it can skip days and there can be multiple balances on one day
@@ -445,6 +448,24 @@ class FinancesController < ApplicationController
       graphs[this_acct_symbol] = line_graph_this_acct
     end
     graphs[:checking_and_credit] = [graphs[:checking_free_checking], graphs[:credit]]
+
+    budgets = {}
+    active_record_budgets = User.select('budgets.id,budgets.value,budgets.purchase_type_id,budgets.user_id,users.email').joins(:budgets).where(id: user)
+    active_record_budgets.each do |budget|
+      budget = budget.attributes
+      budget_id = budget['id']
+      budget_value = budget['value']
+      user_email = budget['email']
+      user_id = budget['user_id']
+      purchase_type_id = budget['purchase_type_id']
+      name = PurchaseType.find(purchase_type_id).name.titleize
+      spent = purchase_type_spent_this_month[purchase_type_id].values[0]
+      budget[:name] = name
+      budget[:spent] = spent
+      budgets[budget_id] = {'id'=>budget_id,'name'=>name,'value'=>budget_value,'spent'=>spent,'purchase_type_id'=>purchase_type_id,
+                            'user_id'=>user_id, 'user_email'=>user_email}
+      # budgets.push(budget)
+    end
 
     # credit_title = 'Credit Card'
     # credit_labels = []

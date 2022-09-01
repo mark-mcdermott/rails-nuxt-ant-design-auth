@@ -63,7 +63,7 @@ class BudgetsController < ApplicationController
     # budget.save!
 
   end
-  
+
   # DELETE '/budgets/:budget_id'
   def destroy_budget
     budget = Budget.find params[:budget_id]
