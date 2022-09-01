@@ -345,15 +345,13 @@ export default ({
     },
 
     saveBudget(budgetObj) {
-
-      console.log(budgetObj)
-
-      // const userId = this.$auth.user.id;
-      // const createBudgetApi = '/budgets/' + userId + '/' + budgetObj.name.toLowerCase() + '/' + budgetObj.value;
-      //   this.$axios.$post(createBudgetApi)
-      //     .then((res) => {
-      //       console.log(res)
-      //     });
+      // console.log(budgetObj)
+      const userId = this.$auth.user.id;
+      const createBudgetApi = '/budgets/' + userId + '/' + budgetObj.name.toLowerCase() + '/' + budgetObj.value;
+        this.$axios.$post(createBudgetApi)
+          .then((res) => {
+            console.log(res)
+          });
       },
 
       // let error = false;
